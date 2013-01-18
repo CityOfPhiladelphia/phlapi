@@ -70,7 +70,7 @@
     <div class="container">
 
       <h2>Crime Incident API</h2>
-      <p>This API exposes Part I crime for the City of Philadelphia beginning January 1, 2006.  Part I crime includes, Homicides, Rapes, Robberies, Aggravated Assaults, Thefts. The data displayed is generalized by the crime type and the block location.</p>
+      <p>This API exposes data on Part I crime incidents for the City of Philadelphia from January 1, 2006.  Part I crime includes, Homicides, Rapes, Robberies, Aggravated Assaults, Thefts. The data returned is generalized by the crime type and the block location.</p>
 
       <h4>Apps that use this API</h4>
 
@@ -82,8 +82,8 @@
       <h4>Key attribute field names and descriptions</h4>
 
       <table class="table table-striped table-bordered">
-        <tr><td>DC_Dist</td><td>a two character field that names the District boundary.</td></tr>
-        <tr><td>Sector</td><td>a single character field that names the Police Service Area boundary.</td></tr>
+        <tr><td>DC_Dist</td><td>A two character field that names the District boundary.</td></tr>
+        <tr><td>Sector</td><td>A single character field that names the Police Service Area boundary.</td></tr>
         <tr><td>Dispatch_Date/Dispatch_Time</td><td>The date and time that the officer was dispatched to the scene.</td></tr>
         <tr><td>Hour</td><td>The generalized hour of the dispatched time.</td></tr>
         <tr><td>DC_Key</td><td>The unique identifier of the crime that consists of Year + District + Unique ID.</td></tr>
@@ -102,6 +102,8 @@
         <li>Part 1 crimes for the <a href="http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents_Last30/MapServer?f=json&pretty=true">last 30 days</a></li>
         <li>All Part 1 crimes <a href="http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents/MapServer?f=json&pretty=true">going back to 1/1/2006</a></li>
       </ul>
+
+      <p>Note - A static CSV file of Part 1 all crime incidents since 1/1/2006 (updated daily) is <a href="http://gis.phila.gov/data/police_inct.zip">available for download</a>.</p>
 
       <h4>Sample API call</h4>
 

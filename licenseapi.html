@@ -74,7 +74,7 @@
 
       <p>This API conforms to the OData protocol specification. More information on the OData specification, including documentation and pre-built client libraries can be found on the <a href="http://www.odata.org/">OData web site</a>.</p>
 
-      <p><strong>Apps that use this API</strong></p>
+      <h4>Apps that use this API</h4>
 
       <div class="apps">
           <a href="http://lti.planphilly.com/"><img src="assets/img/lti.png" class="img-rounded" title="License to Inspect"></a>
@@ -96,7 +96,7 @@
         http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations?$filter=substringof('19107',zip)%20eq%20true&orderby=street_name,street_number
       </div>
 
-      <p>Same as above but with a JSON response and callback:</p>
+      <p>Get all Locations for Zip Code 19107 ordered by Street Name and Street Number with a JSON format response and callback:</p>
 
       <div class="well">
         http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations?$filter=substringof('19107',zip)%20eq%20true&orderby=street_name,street_number&$format=json&$callback=cb
@@ -131,7 +131,7 @@
         http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/cases?$filter=resolution%20eq%20'CLOSED'&orderby=added_datetime%20desc
       </div>
 
-      <h4>Sample API Consumption</h4>
+      <h4>Sample API Consumption (JavaScript)</h4>
 
       <pre>
         &lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"&gt;&lt;/script&gt;
