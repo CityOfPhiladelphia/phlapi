@@ -73,13 +73,13 @@
 
       <h2>311 API (Alpha)</h2>
       <p>This API exposes non-emergency service requests submitted to the City of Philadelphia through the Philly311 mobile application. It largely conforms to the <a href="http://wiki.open311.org/GeoReport_v2">Open311</a> (GeoReport V2) specification, with a few exceptions.</p>
-      <p>The Philly 311 API is currently read only - we only imlement API methods that allow a client to retrieve information about service types or service requests.</p>
+      <p>The Philly 311 API is currently read only - we only implement API methods that allow a client to retrieve information about service types or service requests.</p>
 
       <h4>API Endpoints</h4>
 
        <table class="table table-bordered">
-        <tr><td>Development</td><td>http://www.publicstuff.com/api/open311/discovery.xml</td></tr>
-        <tr><td>Production</td><td>http://test.publicstuff.com/api/open311/discovery.xml</td></tr>
+        <tr><td>Development</td><td>http://test.publicstuff.com/api/open311/discovery.xml</td></tr>
+        <tr><td>Production</td><td>http://www.publicstuff.com/api/open311/discovery.xml</td></tr>
        </table>
 
       <h4>Get Services List</h4>
@@ -87,7 +87,7 @@
       <p>Get a list of 311 service request types and their associated service codes.</p>
 
        <table class="table table-bordered">
-        <tr><td>Sample URL:</td><td>http://www.publicstuff.com/api/open311/services.json?&jurisdiction_id=philadelphia-pa</td></tr>
+        <tr><td>Sample URL:</td><td>http://www.publicstuff.com/api/open311/services.[format]?&jurisdiction_id=philadelphia-pa</td></tr>
         <tr><td>Response formats:</td><td>XML, JSON</td></tr>
         <tr><td>Sample Response:</td><td> <pre>
 [
@@ -116,10 +116,10 @@
 
       <h4>Get Service Definition</h4>
 
-      <p>Get details associated with a service code. (This call is only necessary if the Service selected has metadata set as 'true' from the Get Services List response.)</p>
+      <p>Get details associated with a service code. (This call is only necessary if the service selected has metadata set as 'true' from the Get Services List response.)</p>
 
       <table class="table table-bordered">
-        <tr><td>Sample URL:</td><td>http://www.publicstuff.com/api/open311/services/4086.json?&jurisdiction_id=philadelphia-pa</td></tr>
+        <tr><td>Sample URL:</td><td>http://www.publicstuff.com/api/open311/services/4086.[format]?&jurisdiction_id=philadelphia-pa</td></tr>
         <tr><td>Response formats:</td><td>XML, JSON</td></tr>
         <tr><td>Sample Response:</td><td> <pre>
 {
@@ -168,10 +168,10 @@
 
       <h4>Get Service Requests</h4>
 
-      <p>Query the current status of multiple requests.</p>
+      <p>Find out  the current status of multiple service requests.</p>
 
       <table class="table table-bordered">
-        <tr><td>Sample URL:</td><td>http://test.publicstuff.com/api/open311/requests.json?jurisdiction_id=philadelphia-pa  </td></tr>
+        <tr><td>Sample URL:</td><td>http://test.publicstuff.com/api/open311/requests.[format]?jurisdiction_id=philadelphia-pa  </td></tr>
         <tr><td>Response formats:</td><td>XML, JSON</td></tr>
         <tr><td>Sample Response:</td><td> <pre>
 [
@@ -240,10 +240,10 @@
 
       <h4>Get a Specific Service Request</h4>
 
-      <p>Query the current status of an individual request.</p>
+      <p>Find out the current status of an individual service request.</p>
 
       <table class="table table-bordered">
-        <tr><td>Sample URL:</td><td>http://www.publicstuff.com/api/open311/requests/74666.json?jurisdiction_id=philadelphia-pa</td></tr>
+        <tr><td>Sample URL:</td><td>http://www.publicstuff.com/api/open311/requests/74666.[format]?jurisdiction_id=philadelphia-pa</td></tr>
         <tr><td>Response formats:</td><td>XML, JSON</td></tr>
         <tr><td>Sample Response:</td><td> <pre>
 [
