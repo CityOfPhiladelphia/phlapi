@@ -18,6 +18,9 @@
         margin-top: 10px;
         margin-bottom: 10px;
       }
+      li {
+        margin-top: 3px;
+      }
       .well {
         word-wrap: break-word;;
       }
@@ -29,6 +32,7 @@
         margin-left: 10px;
         margin-right: 10px;
       }
+
     </style>
     <link href="assets/css/bootswatch.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -61,7 +65,7 @@
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="http://www.codecademy.com/tracks/apis">Learn</a></li>
               <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -295,14 +299,14 @@
         <p>http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents/MapServer/0/query?geometry={"rings":[[[-75.16505599021912,39.95365185651431],[-75.16235232353209,39.95329409673581],[-75.16274392604828,39.951423023730335],[-75.16437470912933,39.95170677215989],[-75.16496479511261,39.951805466989896],[-75.16525983810425,39.95202341756838],[-75.16528129577637,39.95224136745237],[-75.16524910926819,39.95252922472533],[-75.16513645648956,39.9529856816317],[-75.16510963439941,39.95331876988407],[-75.16505599021912,39.95365185651431]]],"spatialReference":{"wkid":4326}}&geometryType=esriGeometryPolygon&spatialRel=esriSpatialRelContains&outFields=*&inSR=4326&outSR=4326&f=pjson&pretty=true</p>
     </div>
 
-      Some things to remember here:
+      Some things to remember:
     
       <ul>
         <li>If you are passing a polygon as the geometry, your first pair of coordinates must be identical to your last to "close" the polygon.</li>
         <li>The <code>inSR</code> and <code>outSR</code> parameters require a <a href="http://spatialreference.org/">spatial reference code</a>.  You'll probably be using latitude/longitude, which is 4326, but there are others. If you do not pass these parameters, the service defaults to the <code>spatialReference</code> that you pass in the geometry string, which is required.</li>
       </ul>
 
-      <p>There is a lot of additional functionality that isn't included here.  Consult the <a href="http://gis.phila.gov/ArcGIS/SDK/REST/index.html?query.html">documentation</a> for all the information.</p>
+      <p>There is additional functionality for thsi API that is not included here.  Consult the <a href="http://gis.phila.gov/ArcGIS/SDK/REST/index.html?query.html">documentation</a> for complete information.</p>
 
       </div> <!-- /container -->
 
