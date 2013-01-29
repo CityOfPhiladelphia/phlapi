@@ -78,7 +78,7 @@
       <h2>Crime Data API</h2>
       <p>This API exposes data on Part I crime incidents for the City of Philadelphia from January 1, 2006.  Part I crime includes, Homicides, Rapes, Robberies, Aggravated Assaults, Thefts. The data returned is generalized by the crime type and the block location.</p>
 
-      <h4>Apps that use this API</h4>
+      <h4>Apps That Use This API</h4>
 
       <div class="apps">
           <a href="http://www.phlcrimemapper.com/"><img src="assets/img/phlcrimemapper.png" class="img-rounded" title="PHL Crime Mapper"></a>
@@ -86,7 +86,7 @@
           <a href="http://mheadd.github.com/philly-homicides/"><img src="assets/img/philly-homicides.png" class="img-rounded" title="Philly Homicides"></a>
       </div>
 
-      <h4>Key attribute field names and descriptions</h4>
+      <h4>Key Attribute Field Names &amp; Descriptions</h4>
 
       <table class="table table-striped table-bordered">
         <tr><td>DC_Dist</td><td>A two character field that names the District boundary.</td></tr>
@@ -113,18 +113,18 @@
         <tr><td>700</td><td>Motor Vehicle Theft and Recovered Stolen Motor Vehicle</td></tr>
       </table>
 
-      <h4>API Endpoint</h4>
+      <h4>API Endpoints</h4>
 
       <p>There are two API enpoints, providing crime data going back to different points in time.</p>
 
-      <ul>
-          <li>Part 1 crimes for the last 30 days: <code>http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents_Last30/Mapserver</code></li>
-          <li>All Part 1 crimes going back to 1/1/2006: <code>http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents/MapServer</code></li>
-      </ul>
+      <table class="table table-bordered">
+        <tr><td>Part 1 crimes for the last 30 days</td><td>http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents_Last30/Mapserver</td></tr>
+        <tr><td>Part 1 crimes going back to 1/1/2006</td><td>http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents/MapServer</td></tr>
+       </table>
 
       <p>Note - A static CSV file of Part 1 all crime incidents since 1/1/2006 (updated daily) is <a href="http://gis.phila.gov/data/police_inct.zip">available for download</a>.</p>
 
-      <h4>Sample API calls</h4>
+      <h4>Sample API Calls</h4>
 
       <p>Using query <code>SECTOR='3'</code> AND <code>UCR_GENERAL='500'</code></p>
 
@@ -132,7 +132,7 @@
         <p>http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents_Last30/MapServer/0/query?text=&geometry=&geometryType=esriGeometryPoint&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&objectIds=&where=SECTOR%3D%273%27+AND+UCR_GENERAL%3D%27500%27&time=&returnCountOnly=false&returnIdsOnly=false&returnGeometry=true&maxAllowableOffset=&outSR=&outFields=*&f=pjson</p>
       </div>
 
-      <h4>Sample API response </h4>
+      <h4>Sample API Response </h4>
 
       <p>Note - truncated for display.</p>
 
@@ -299,7 +299,7 @@
         <p>http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents/MapServer/0/query?geometry={"rings":[[[-75.16505599021912,39.95365185651431],[-75.16235232353209,39.95329409673581],[-75.16274392604828,39.951423023730335],[-75.16437470912933,39.95170677215989],[-75.16496479511261,39.951805466989896],[-75.16525983810425,39.95202341756838],[-75.16528129577637,39.95224136745237],[-75.16524910926819,39.95252922472533],[-75.16513645648956,39.9529856816317],[-75.16510963439941,39.95331876988407],[-75.16505599021912,39.95365185651431]]],"spatialReference":{"wkid":4326}}&geometryType=esriGeometryPolygon&spatialRel=esriSpatialRelContains&outFields=*&inSR=4326&outSR=4326&f=pjson&pretty=true</p>
     </div>
 
-      Some things to remember:
+      Some things to keep in mind:
     
       <ul>
         <li>If you are passing a polygon as the geometry, your first pair of coordinates must be identical to your last to "close" the polygon.</li>
