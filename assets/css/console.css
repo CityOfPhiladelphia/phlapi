@@ -1,0 +1,160 @@
+/* line 2, ../../app/styles/main.scss */
+.contain {
+  width: 800px;
+  margin-top: 5px;
+}
+
+/* line 8, ../../app/styles/main.scss */
+.form {
+  margin: auto 0;
+  width: 1000px;
+}
+
+/* line 13, ../../app/styles/main.scss */
+.bbf-field {
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+/* line 18, ../../app/styles/main.scss */
+.bbf-radio {
+  list-style-type: none;
+}
+
+/* line 22, ../../app/styles/main.scss */
+.query-results {
+  white-space: pre;
+}
+
+/* line 26, ../../app/styles/main.scss */
+.endpoints-container {
+  margin: auto 0;
+}
+
+/* line 30, ../../app/styles/main.scss */
+.hidden {
+  display: none;
+}
+
+/* line 34, ../../app/styles/main.scss */
+.textbox {
+  height: 120px;
+  width: 500px;
+}
+
+/* line 39, ../../app/styles/main.scss */
+#map {
+  height: 350px;
+  width: 745px;
+}
+
+/* line 44, ../../app/styles/main.scss */
+label {
+  display: block;
+  padding: 2px 1em 0 0;
+}
+
+/* line 48, ../../app/styles/main.scss */
+input[type=radio], input.radio {
+  float: left;
+  margin: 2px 0 0 2px;
+}
+
+/* line 53, ../../app/styles/main.scss */
+.bbf-help {
+  color: #3B5323;
+}
+
+/* line 57, ../../app/styles/main.scss */
+.query-url {
+  max-width: 760px;
+  word-wrap: break-word;
+}
+
+/* line 62, ../../app/styles/main.scss */
+.query-results {
+  word-wrap: break-word;
+}
+
+/* line 66, ../../app/styles/main.scss */
+.alert {
+  width: 695px;
+}
+
+/* line 70, ../../app/styles/main.scss */
+.well {
+  margin-bottom: 5px;
+}
+
+/* line 74, ../../app/styles/main.scss */
+#c1_geometry {
+  margin-top: 15px;
+  width: 730px;
+}
+
+/* line 79, ../../app/styles/main.scss */
+#c1_where {
+  width: 450px;
+}
+
+/* line 83, ../../app/styles/main.scss */
+.description {
+  margin-top: 20px;
+}
+
+/* line 87, ../../app/styles/main.scss */
+.geometry-alert {
+  margin-top: 12px;
+}
+
+/* line 91, ../../app/styles/main.scss */
+.loader .icon {
+  background-color: black;
+  background: url(ajax-loader.gif);
+  display: block;
+  margin: 0 auto;
+  width: 44px;
+  height: 44px;
+  padding: 1px;
+  -webkit-border-radius: 36px;
+  border-radius: 36px;
+  moz-border-radius: 36px;
+}
+
+/* line 104, ../../app/styles/main.scss */
+.loading .loader {
+  display: block;
+}
+
+/* line 105, ../../app/styles/main.scss */
+.loader {
+  display: none;
+  z-index: 9999999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 0;
+  background: none;
+  filter: Alpha(Opacity=18);
+  opacity: .18;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  margin-top: -23px;
+}
+
+/* line 121, ../../app/styles/main.scss */
+.leaflet-control-draw {
+  display: none;
+}
+
+/* line 125, ../../app/styles/main.scss */
+#c1_returnFields {
+  width: 450px;
+}
+
+/* line 129, ../../app/styles/main.scss */
+.alert-error {
+  width: 750px;
+  margin-bottom: 5px;
+}

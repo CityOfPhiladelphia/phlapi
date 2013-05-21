@@ -32,6 +32,11 @@
     </style>
     <link href="assets/css/bootswatch.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/forms.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.5/leaflet.css">
+    <link rel="stylesheet" href="assets/css/leaflet.draw.css">
+    <link rel="stylesheet" href="assets/css/chosen.css">
+    <link rel="stylesheet" href="assets/css/console.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -70,7 +75,7 @@
     </div>
 
     <div class="container-fluid">
-      <h2>Geospatial APIs for the City of Philadelphia</h2>
+      <h2>Geospatial API Console</h2>
 
       <div class="row-fluid">
       <div class="span2">
@@ -81,8 +86,51 @@
       </div>
       <div class="span9">
 
-        <p class="lead">A collection of geospatial APIs that are built on ESRI's ArcGIS platform.</p>
-        <div id="services_list"></div>
+        <p class="lead">Use this console to explore the geospatial APIs that the City of Philadelphia provides.</p>
+        <!--<div id="services_list"></div>-->
+<script type="text/template" id="endpoint-select-template">
+        <select name="endpoint" id="endpoint-selector" class="endpoints chzn-select">
+            <% for(var endpoint in endpoints) { %>
+                <option value="<%= endpoints[endpoint].name %>"><%= endpoints[endpoint].name %></option>
+            <% } %>
+        </select>
+    </script>
+
+    <script type="text/template" id="query-template">
+        <%= base %><%= service %>/MapServer/<%= layer %>/query?where=<%= where %>&inSR=<%= inSR %>&geometry=<%= geometry
+        %>&geometryType=<%= geometryType %>&spatialRel=<%= spatialRel %>&outSR=<%= outSR %>&returnCountOnly=<%=
+        returnCountOnly %>&returnIdsOnly=<%= returnIdsOnly %>&returnGeometry=<%= returnGeometry %>&outFields=<%=
+        returnFields %><br />
+        <h6>For advanced queries, try the official ArcGIS console: <a target="_new" href="<%= base %><%= service %>/MapServer/<%= layer %>/query">
+        <%= base %><%= service %>/MapServer/<%= layer %>/query</a></h6>
+    </script>
+
+    <script type="text/template" id="description-template">
+        <%= service.description %><br />
+        <% if (service.metadata) { %>
+            <a href="<%- service.metadata %>" target="_new">Metadata</a>
+        <% } %>
+    </script>
+
+    <body>
+        <div class="loader">
+            <span class="icon"></span>
+        </div>
+        <div class="contain">
+            <div class="endpoints-container" align="center"></div>
+            <div class="query well description" align="center"></div>
+            <div class="form"></div>
+            <button class="btn btn-submit">Submit</button><br />
+            <div id="query-container">
+                <h1>Query</h1>
+                <div class="query well"></div>
+            </div>
+            <div class="error-container"></div>
+            <div id="results-container">
+                <h1>Results</h1>
+                <div class="query-results well"></div>
+            </div>
+        </div>
 
       </div>
 
@@ -90,6 +138,14 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+    <script src="assets/js/backbone-forms.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/chosen/0.9.12/chosen.jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.5/leaflet.js"></script>
+    <script src="assets/js/leaflet.draw.js"></script>
+    <!--<script src="scripts/bootstrap-alert.js"></script>-->
+    <script src="assets/js/console.js"></script>
     <script type="text/javascript">
       $("document").ready(function() {
           $.getJSON("assets/services.json", function(data) {
