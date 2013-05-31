@@ -61,7 +61,8 @@
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <li class="active"><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="license.html">License</a></li>
               <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -94,6 +95,7 @@
       $("document").ready(function() {
           $.getJSON("assets/services.json", function(data) {
               $("#services_list").append("<table id=\"services\" class=\"table table-bordered table-striped\">");
+              $("#services").append("<tr><th>Field Name</th><th>Description</th><th>Data Type</th></tr>");
               $.each(data.services, function(i, item) {
                 var cell_content = "<tr><td>" + item.name +"</td><td>" + item.description;
                 if(item.metadata.length > 0) {

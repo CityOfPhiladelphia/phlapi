@@ -19,7 +19,7 @@
         margin-bottom: 10px;
       }
       .well {
-        word-wrap: break-word;;
+        word-wrap: break-word;
       }
       .apps {
         padding: 10px;
@@ -28,6 +28,11 @@
         padding: 10px;
         margin-left: 10px;
         margin-right: 10px;
+      }
+      .container-fluid h4 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 17.5px;
       }
     </style>
     <link href="assets/css/bootswatch.css" rel="stylesheet">
@@ -62,6 +67,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="license.html">License</a></li>
               <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -117,28 +123,9 @@
 
          <p>A location is typically a street address for a parcel of land or a sub-unit of a parcel. Each location is associated with a city, state, ZIP code, and geographic X-Y coordinates, as well as geographic divisions such as City Council District, Census Tract, Census Block Group, and Political Ward.</p>
 
-         <table class="table table-bordered table-striped">
-          <tr><th>API Field</th> <th>Description</th> <th>Data Type</th></tr>
-          <tr><td>locations.location_id</td><td> Address Key</td> <td>Int32</td></tr>
-          <tr><td>locations.street_number</td><td> Street Number</td> <td> String</td></tr>
-          <tr><td>locations.street_direction</td><td> Direction</td> <td> String</td></tr>
-          <tr><td>locations.street_name</td><td> Street Name</td> <td> String</td></tr>
-          <tr><td>locations.street_suffix</td><td> Designation</td> <td> String</td> </tr>
-          <tr><td>locations.city </td><td> City</td> <td> String</td> </tr>
-          <tr><td>locations.state</td><td> State </td> <td>String</td></tr>
-          <tr><td>locations.zip</td><td> Zip Code</td> <td> String</td></tr>
-          <tr><td>locations.x</td><td>  X NARD83 HARD</td> <td> Decimal</td></tr>
-          <tr><td>locations.y </td><td> Y NARD83 HARD</td> <td> Decimal</td></tr>
-          <tr><td>locations.census_tract</td><td>  Census Tract</td> <td> String</td></tr>
-          <tr><td>locations.council_district </td><td>Council District</td> <td> String</td></tr>
-          <tr><td>locations.condo_unit</td><td>  Condo Unit</td> <td> String</td></tr>
-          <tr><td>locations.unit_number</td><td>  Unit Number</td> <td> String</td></tr>
-          <tr><td>locations.census_block</td><td>  Census Block</td> <td> String</td></tr>
-          <tr><td>locations.ward</td><td> Ward </td> <td>String</td></tr>
-         </table>
+         <div id="locations_table"></div>
 
-
-         <h4 id="permits">Permits</h4>
+        <h4 id="permits">Permits</h4>
 
         <p>A permit grants legal permission to commence work on physical changes or zoning changes to a lot or structure. These include but are not limited to new constructions, alterations, demolitions, occupancy changes, and installations of and modifications to electrical, mechanical, and plumbing systems.</p>
 
@@ -146,6 +133,7 @@
 
         <p>The Permit Code Description is more specific and describes in detail the objectives of the permitted work. For example, in the case of mechanical work a Code Description may specify the type and number of appliances to be installed (MEC-EQUIPMENT/APPLIANCE INSTAL). There is then a Description of Work for each specific permit to summarize the intent of the work. The Status and Last Modified Date indicate the current standing of the project. Contact information is provided for the primary contact and/or the contractor working on the project.</p>
 
+        <div id="permits_table"></div>
 
          <h4 id="licenses">Licenses</h4>
 
@@ -153,43 +141,44 @@
 
         <p>Each license has a unique License Number, an issue date (given when payment and all pre-requisites have been met), and a month and year of expiration. Status indicates whether the license is Active, Inactive, or Expired. Inactive Date indicates if and when a license became inactive before expiring. Primary contact information is provided for each license.</p>
 
+        <div id="licenses_table"></div>
+
          <h4 id="contractors">Licensed Contractors</h4>
 
          <p>Building contractors and certain trades-people such as plumbers and electricians require licenses to practice their trade. Each Licensed Contractor is issued a unique Contractor License Number. Contact information is given for the individual being licensed.</p>
 
+        <div id="contractors_table"></div>
 
          <h4 id="cases">Cases</h4>
 
-         <p>A case is a recorded instance, created when a property is inspected and cited for one or more violations of the Philadelphia Code. A property will be re-inspected after a certain time interval to see whether or not the violations on the case have been complied. Further actions may be taken by the department to resolve a case. These actions may include clean &amp; seals, demolitions, or sending a case to court. Each case has a unique Case Number and cites a specific Location in violation.</p>
+        <p>A case is a recorded instance, created when a property is inspected and cited for one or more violations of the Philadelphia Code. A property will be re-inspected after a certain time interval to see whether or not the violations on the case have been complied. Further actions may be taken by the department to resolve a case. These actions may include clean &amp; seals, demolitions, or sending a case to court. Each case has a unique Case Number and cites a specific Location in violation.</p>
 
-         <p>Each Case is also assigned a Priority, indicating whether the property is Non Hazardous, Unsafe, or Imminently Dangerous. Relevant dates are associated with each Case to indicate when the case was created/added, when it was last updated, and, in the event of a resolution, when the case was resolved.</p>
-
+        <p>Each Case is also assigned a Priority, indicating whether the property is Non Hazardous, Unsafe, or Imminently Dangerous. Relevant dates are associated with each Case to indicate when the case was created/added, when it was last updated, and, in the event of a resolution, when the case was resolved.</p>
+        <div id="cases_table"></div>
 
          <h4 id="viloations">Violation Details</h4>
 
          <p>Each <a href="#cases">Case</a> cites the sections of the Philadelphia Code of which a property is found in violation. These citations are known as Violations, which are given a unique Violation ID for each time the property is found to be in violation. The Violation Code corresponds to the section of the Philadelphia Code being violated and is further described in the synonymous Violation Description. Each Violation has a corresponding Case number and Location, initial date of violation, and Status from the most recent inspection of the Location.</p>
-
+         <div id="violations_table"></div>
 
          <h4 id="zoningappeal">Zoning Board Appeals</h4>
-
          <p>See details of appeal review <a href="#notes">below.</a></p>
+         <div id="zoningappeal_table"></div>
 
 
          <h4 id="liappeal">L&I Review Board Appeals</h4>
-
          <p>See details of appeal review <a href="#notes">below.</a></p>
-
+         <div id="liappeal_table"></div>
 
          <h4 id="buildingappeal">Building Board Appeals</h4>
-
          <p>See details of appeal review <a href="#notes">below.</a></p>
-
+         <div id="buildingappeal_table"></div>
 
          <h4 id="hearings">Appeal Hearings</h4>
-
+         <div id="hearing_table"></div>
 
          <h4 id="dates">Hearing Dates</h4>
-
+         <div id="hearing_dates_table"></div>
 
         <h4 id="samplerequest">Sample Data Requests</h4>
 
@@ -277,6 +266,43 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/tabletop.js"></script>
+    <script type="text/javascript">
 
+      $(document).ready(function(){
+
+        var public_spreadsheet_url = '0AsNAXuadeXIxdG1sSmZDRkJDT2J0ak1nVWIzQU5PVXc';
+
+        Tabletop.init( { key: public_spreadsheet_url, callback: showInfo, simpleSheet: true } );
+
+        function showInfo(data, tabletop) {
+          createTable("locations_table", data, "Locations");
+          createTable("permits_table", data, "Permits");
+          createTable("licenses_table", data, "Licenses");
+          createTable("contractors_table", data, "Licesned_Contractors");
+          createTable("cases_table", data, "Cases");
+          createTable("violations_table", data, "Violations");
+          createTable("zoningappeal_table", data, "Zoning_Board_Appeals");
+          createTable("liappeal_table", data, "LI_Review_Board_Appeals");
+          createTable("buildingappeal_table", data, "Building_Board_Appeals");
+          createTable("hearing_table", data, "Building_Board_Appeals");
+          createTable("hearing_dates_table", data, "Hearing_Dates");
+        }
+
+        function createTable(name, data, tabletype) {
+          $("#" + name).append("<table id=\"" + name + "fields\" class=\"table table-bordered table-striped\">");
+          $("#" + name + "fields").append("<tr><th>API Field</th><th>Description</th><th>Data Type</th></tr>");
+          $.each(data, function(i, item) {
+            if(data[i].tabletype == tabletype) {
+              var cell_content = "<tr><td>" + data[i].name + "</td><td>" + data[i].description + "</td><td>" + data[i].datatype + "</td></tr>";
+              $("#" + name + "fields").append(cell_content);
+               }
+            });
+          $("#" + name + "fields").append("</table>");
+        }
+
+      });
+
+    </script>
   </body>
 </html>
