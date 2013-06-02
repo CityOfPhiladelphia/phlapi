@@ -95,7 +95,7 @@
       $("document").ready(function() {
           $.getJSON("assets/services.json", function(data) {
               $("#services_list").append("<table id=\"services\" class=\"table table-bordered table-striped\">");
-              $("#services").append("<tr><th>Field Name</th><th>Description</th><th>Data Type</th></tr>");
+              $("#services").append("<tr><th>Field Name</th><th>Description</th></tr>");
               $.each(data.services, function(i, item) {
                 var cell_content = "<tr><td>" + item.name +"</td><td>" + item.description;
                 if(item.metadata.length > 0) {
