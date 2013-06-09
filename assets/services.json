@@ -22,6 +22,55 @@
 			"metadata": "http://opendataphilly.org/opendata/resource/225/opa-property-assessments/"
         },
         {
+            "name": "Health Centers",
+            "path": "PhilaGov/Health_Centers",
+            "layer": 0,
+            "description": "Health Centers in Philadelphia operated by the Philadelphia Department of Public Health or community health centers (Federally Qualified Health Centers)",
+            "metadata": "http://www.arcgis.com/home/item.html?id=28ef9fd21a794d16873e765300d4232e"
+        },
+        {   
+            "name": "KEYSPOT Locations",
+            "path": "PhilaGov/Keyspot_Locations",
+            "layer": 0,
+            "description": "KEYSPOT Locations",
+            "metadata": "http://www.arcgis.com/home/item.html?id=95f5a4e1324c40ee850ba433263540a6"
+        },
+        {   
+            "name": "High Rise Rally Points",
+            "path": "PhilaGov/High_Rise_Rally_Points",
+            "layer": 0,
+            "description": "High rise office buildings (seven stories or more) and their evacuation rally points",
+            "metadata": "http://www.arcgis.com/home/item.html?id=d0d970c442264a58baaaaa42b5a8f495"
+        },
+        {
+            "name": "Evacuation Rally points",
+            "path": "PhilaGov/High_Rise_Rally_Points",
+            "layer": 1,
+            "description": "Evacuation rally points in the case of an emergency",
+            "metadata": "http://www.arcgis.com/home/item.html?id=d0d970c442264a58baaaaa42b5a8f495"
+        },
+        {
+            "name": "Pools and Spraygrounds",
+            "path": "PhilaGov/Cooling_Centers",
+            "layer": 1,
+            "description": "Pools and Spraygrounds",
+            "metadata": "http://www.arcgis.com/home/item.html?id=9354d318457c43a8b137c47831a9ef5a"
+        },
+        {
+            "name": "Cooling Centers",
+            "path": "PhilaGov/Cooling_Centers",
+            "layer": 0,
+            "description": "Cooling centers open in the case of a heat emergency",
+            "metadata": "http://www.arcgis.com/home/item.html?id=9354d318457c43a8b137c47831a9ef5a"
+        },
+        {   
+            "name": "Evacuation Routes",
+            "path": "PhilaGov/Evacuation_Routes",
+            "layer": 2,
+            "description": "Identify different evacuation routes out of your neighborhood based on whether you will be walking, driving, or taking public transportation",
+            "metadata": "http://www.arcgis.com/home/item.html?id=0bec3e598abb4b969ae5367b3f8c6a95"
+        },
+        {
             "name": "Farmer's Markets",
             "path": "PhilaGov/Farmers_Markets",
             "layer": 0,
