@@ -18,17 +18,6 @@
         margin-top: 10px;
         margin-bottom: 10px;
       }
-      .well {
-        word-wrap: break-word;;
-      }
-      .apps {
-        padding: 10px;
-      }
-      .img-rounded {
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
     </style>
     <link href="assets/css/bootswatch.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -60,8 +49,8 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="libraries.html">Libraries</a></li>
-              <li class="active"><a href="gallery.html">Gallery</a></li>
+              <li class="active"><a href="libraries.html">Libraries</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
               <li><a href="license.html">License</a></li>
               <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
             </ul>
@@ -72,26 +61,22 @@
 
     <div class="container">
 
-      <h2>Application Showcase</h2>
+      <h2>Helper Libraries</h2>
 
-      <p>These apps use the <a href="licenseapi.html">Licenses & Inspection API</a>.</p>
+      <p>Getting started using one of the City of Philadelphia APIs is easy - you can use one of these helper libraries, or even write your own. If you'd like to contribute or enhance any of the libraries listed here, make sure to fork the source code on GitHub and send a pull request to the project sponsor.</p>
 
-      <div class="apps">
-          <a href="http://lti.planphilly.com/"><img src="assets/img/lti.png" class="img-rounded" title="License to Inspect"></a>
-          <a href="http://cityofphiladelphia.github.com/li/"><img src="assets/img/li.png" class="img-rounded" title="L and I Property History"></a>
-          <a href="http://phli.herokuapp.com/"><img src="assets/img/phli.png" class="img-rounded" title="PHLI"></a>
-      </div>
-
-      <p>These apps use the <a href="crimeapi.html">Philly Cirme API</a>.</p>
-
-      <div class="apps">
-          <a href="http://www.phlcrimemapper.com/"><img src="assets/img/phlcrimemapper.png" class="img-rounded" title="PHL Crime Mapper"></a>
-          <a href="http://www.phillycrimemap.org/"><img src="assets/img/phlcrimemap.png" class="img-rounded" title="Philly Crime Map"></a>
-          <a href="http://mheadd.github.com/philly-homicides/"><img src="assets/img/philly-homicides.png" class="img-rounded" title="Philly Homicides"></a>
-          <a href="http://apps.axisphilly.org/crime-change/"><img src="assets/img/crime-by-hood.png" class="img-rounded" title="PHL Crime Mapper"></a>
-          <a href="http://www.phila.gov/map#id=c2d43f13123843688c7d6c1add5ddba2"><img src="assets/img/slash-map.png" class="img-rounded" title="Phila.gov/Map"></a>
-          <a href="http://mapmeld.github.io/crimestep?start=39.95206,-75.16702&end=39.93784,-75.1772"><img src="assets/img/crimeStep.png" class="img-rounded" title="Philly CrimeStep"></a>
-      </div>
+      <table class="table table-striped table-bordered">
+      <tr><th>Name:</th><th>Language:</th><th>Description:</th></tr>
+      <tr><td><a href="https://npmjs.org/package/phl-geocode">phl-geocode</a></td><td>Node.js</td><td>Get latitude and longitude coordinates for a Philadelphia Address.</td></tr>
+      <tr><td><a href="https://npmjs.org/package/phl-pac-complaints">phl-pac-complaints</a></td><td>Node.js</td><td>A module for working with City of Philadelphia's Police Advisory Commision Complaints Data. (Node.js)</td></tr>
+      <tr><td><a href="https://npmjs.org/package/phl-poll-finder">phl-poll-finder</a></td><td>Node.js</td><td>Find the polling location for a Philadelphia voter. (Node.js)</td></tr>
+      <tr><td><a href="https://npmjs.org/package/phli">phli</a></a></td><td>Node.js</td><td>A module for working with City of Philadelphia's Licenses & Inspections Data.</td></tr>
+      <tr><td><a href="https://github.com/AxisPhilly/py-li">py-li</a></a></td><td>Python</td><td>A thin wrapper for the City of Philadelphia L&I API.</td></tr>    
+      <tr><td><a href="https://github.com/codeforamerica/node-open311">open311</a></td><td>Node.js</td><td>A module for interacting with an Open311 API.</td></tr>
+      <tr><td><a href="https://github.com/codeforamerica/open311_php">open311_php</a></td><td>PHP</td><td>Open311 library updated for GeoReport v2.</td></tr>
+      <tr><td><a href="https://github.com/codeforamerica/three">three</a></td><td>Python</td><td>An easy-to-use wrapper for the Open311 API.</td></tr>
+      <tr><td><a href="http://rubygems.org/gems/open311">Open311 Gem</a></td><td>Ruby</td><td>A wrapper for the Open311 API v2.</td></tr>
+      </table>
 
     </div> <!-- /container -->
 
