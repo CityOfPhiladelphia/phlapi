@@ -1,25 +1,25 @@
 {
-	"services": [
-		{
-			"name": "Part I Crime Incidents",
-			"path": "PhilaGov/Police_Incidents",
-			"layer": 0,
-			"description": "Philadelphia Part I crimes since 1/1/06. Updated daily from the Police Dept.",
-			"metadata": "http://gis.phila.gov/data/Police_Crime_Incident_metadata.docx"
-		},
-		{
-			"name": "Part I Crime Incidents Last 30 Days",
-			"path": "PhilaGov/Police_Incidents_Last30",
-			"layer": 0,
-			"description": "Crime Incidents Part I over the last 30 Days. Updated daily from the Police Dept.",
-			"metadata": "http://gis.phila.gov/data/Police_Crime_Incident_metadata.docx"
-		},
-		{
-			"name": "OPA AVI 2013-14",
-			"path": "OPA/AVI_2013_2014_ADDL",
-			"layer": 0,
-			"description": "Philadelphia Property Accessments for 2013 and 2014.",
-			"metadata": "http://opendataphilly.org/opendata/resource/225/opa-property-assessments/"
+    "services": [
+        {
+            "name": "Part I Crime Incidents",
+            "path": "PhilaGov/Police_Incidents",
+            "layer": 0,
+            "description": "Philadelphia Part I crimes since 1/1/06. Updated daily from the Police Dept.",
+            "metadata": "http://gis.phila.gov/data/Police_Crime_Incident_metadata.docx"
+        },
+        {
+            "name": "Part I Crime Incidents Last 30 Days",
+            "path": "PhilaGov/Police_Incidents_Last30",
+            "layer": 0,
+            "description": "Crime Incidents Part I over the last 30 Days. Updated daily from the Police Dept.",
+            "metadata": "http://gis.phila.gov/data/Police_Crime_Incident_metadata.docx"
+        },
+        {
+            "name": "OPA AVI 2013-14",
+            "path": "OPA/AVI_2013_2014_ADDL",
+            "layer": 0,
+            "description": "Philadelphia Property Accessments for 2013 and 2014.",
+            "metadata": "http://opendataphilly.org/opendata/resource/225/opa-property-assessments/"
         },
         {
             "name": "Health Centers",
@@ -28,14 +28,14 @@
             "description": "Health Centers in Philadelphia operated by the Philadelphia Department of Public Health or community health centers (Federally Qualified Health Centers)",
             "metadata": "http://www.arcgis.com/home/item.html?id=28ef9fd21a794d16873e765300d4232e"
         },
-        {   
+        {
             "name": "KEYSPOT Locations",
             "path": "PhilaGov/Keyspot_Locations",
             "layer": 0,
             "description": "KEYSPOT Locations",
             "metadata": "http://www.arcgis.com/home/item.html?id=95f5a4e1324c40ee850ba433263540a6"
         },
-        {   
+        {
             "name": "High Rise Rally Points",
             "path": "PhilaGov/High_Rise_Rally_Points",
             "layer": 0,
@@ -63,7 +63,7 @@
             "description": "Cooling centers open in the case of a heat emergency",
             "metadata": "http://www.arcgis.com/home/item.html?id=9354d318457c43a8b137c47831a9ef5a"
         },
-        {   
+        {
             "name": "Evacuation Routes",
             "path": "PhilaGov/Evacuation_Routes",
             "layer": 2,
@@ -77,19 +77,22 @@
             "description": "Philadelphia farmer's market locations.",
             "metadata": ""
         },
-        {   "name": "Fire Stations",
+        {
+            "name": "Fire Stations",
             "path": "PhilaGov/Fire_Stations",
             "layer": 0,
             "description": "Philadelphia fire stations.",
             "metadata": ""
         },
-        {   "name": "Golf Courses",
+        {
+            "name": "Golf Courses",
             "path": "PhilaGov/Golf_Courses",
             "layer": 0,
             "description": "Golf courses throughout Philadelphia.",
             "metadata": ""
         },
-        {   "name": "Healthy Corner Stores",
+        {
+            "name": "Healthy Corner Stores",
             "path": "PhilaGov/Healthy_Corner_Stores",
             "layer": 0,
             "description": "Healthy corner stores and enhanced corner stores throughout Philadelphia.",
@@ -257,6 +260,4 @@
             "metadata": ""
         }
     ]
-}
-]
 }
