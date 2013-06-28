@@ -15,13 +15,6 @@
             "metadata": "http://gis.phila.gov/data/Police_Crime_Incident_metadata.docx"
         },
         {
-            "name": "OPA AVI 2013-14",
-            "path": "OPA/AVI_2013_2014_ADDL",
-            "layer": 0,
-            "description": "Philadelphia Property Accessments for 2013 and 2014.",
-            "metadata": "http://opendataphilly.org/opendata/resource/225/opa-property-assessments/"
-        },
-        {
             "name": "Health Centers",
             "path": "PhilaGov/Health_Centers",
             "layer": 0,
