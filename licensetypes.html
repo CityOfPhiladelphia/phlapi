@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,20 +13,10 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
-      h4 {
+      .container h4 {
         margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .well {
-        word-wrap: break-word;
-      }
-      .apps {
-        padding: 10px;
-      }
-      .img-rounded {
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-bottom: 15px;
+        font-size: 17.5px;
       }
     </style>
     <link href="assets/css/bootswatch.css" rel="stylesheet">
@@ -61,8 +50,8 @@
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="libraries.html">Libraries</a></li>
-              <li class="active"><a href="gallery.html">Gallery</a></li>
-              <li><a href="license.html">License</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li class="active"><a href="license.html">License</a></li>
               <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -70,29 +59,40 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container">	
 
-      <h2>Application Showcase</h2>
+    	<h2>License Codes &amp; Descriptions</h2>
 
-      <p>These apps use the <a href="licenseapi.html">Licenses & Inspection API</a>.</p>
+    	<table class="table table-bordered table-striped">
+		<tr><th>License Number</th><th>License Type Code</th></tr>
+		<tr><td>3001</td><td>AMUSEMENT</td></tr>
+		<tr><td>3006</td><td>SPEC ASSEMBLY OCC/PROMOTER REG</td></tr>
+		<tr><td>3113</td><td>FOOD MANUFACTURER/WHOLESALE PR</td></tr>
+		<tr><td>3118</td><td>FOOD EST.,PERM LOC (SMALL)</td></tr>
+		<tr><td>3119</td><td>FOOD EST.PERM. LOC (LARGE)</td></tr>
+		<tr><td>3120</td><td>FOOD PREP(&lt;50 SEATS)</td></tr>
+		<tr><td>3121</td><td>FOOD PREP (50+ SEATS)</td></tr>
+		<tr><td>3122</td><td>FOOD PREPARATION (CATERER)</td></tr>
+		<tr><td>3123</td><td>SIDEWALK CAFE, OPEN</td></tr>
+		<tr><td>3202</td><td>HOUSING INSPECTION</td></tr>
+		<tr><td>3219</td><td>RESIDENTIAL RES_VACANT</td></tr>
+		<tr><td>3230</td><td>DUMPSTER, PRIVATE</td></tr>
+		<tr><td>3271</td><td>CURB MARKET</td></tr>
+		<tr><td>3311</td><td>MOTOR FUEL DISP & VEH REPAIR</td></tr>
+		<tr><td>3335</td><td>HAZARDOUS MATERIALS</td></tr>
+		<tr><td>3371</td><td>PARKING LOT/GARAGE</td></tr>
+		<tr><td>3374</td><td>AUTO WRECKING YARD</td></tr>
+		<tr><td>3381</td><td>PAWNSHOP</td></tr>
+		<tr><td>3397</td><td>FAMILY CHILD DAY CARE</td></tr>
+		<tr><td>3524</td><td>DEALER - PRECIOUS METALS</td></tr>
+		<tr><td>3629</td><td>HIGH RISE LICENSE</td></tr>
+		<tr><td>3634</td><td>VACANT COMMERCIAL PROP.</td></tr>
+		<tr><td>3809</td><td>BINGO</td></tr>
+		<tr><td>3822</td><td>SCALES &amp; SCANNERS</td></tr>
+		<tr><td>3843</td><td>SMALL GAMES OF CHANCE</td></tr>
+		</table>
 
-      <div class="apps">
-          <a href="http://lti.planphilly.com/"><img src="assets/img/lti.png" class="img-rounded" title="License to Inspect"></a>
-          <a href="http://cityofphiladelphia.github.com/li/"><img src="assets/img/li.png" class="img-rounded" title="L and I Property History"></a>
-          <a href="http://phli.herokuapp.com/"><img src="assets/img/phli.png" class="img-rounded" title="PHLI"></a>
-      </div>
-
-      <p>These apps use the <a href="crimeapi.html">Philly Cirme API</a>.</p>
-
-      <div class="apps">
-          <a href="http://www.phlcrimemapper.com/"><img src="assets/img/phlcrimemapper.png" class="img-rounded" title="PHL Crime Mapper"></a>
-          <a href="http://www.phillycrimemap.org/"><img src="assets/img/phlcrimemap.png" class="img-rounded" title="Philly Crime Map"></a>
-          <a href="http://mheadd.github.com/philly-homicides/"><img src="assets/img/philly-homicides.png" class="img-rounded" title="Philly Homicides"></a>
-          <a href="http://apps.axisphilly.org/crime-change/"><img src="assets/img/crime-by-hood.png" class="img-rounded" title="PHL Crime Mapper"></a>
-          <a href="http://www.phila.gov/map#id=c2d43f13123843688c7d6c1add5ddba2"><img src="assets/img/slash-map.png" class="img-rounded" title="Phila.gov/Map"></a>
-          <a href="http://mapmeld.github.io/crimestep?start=39.95206,-75.16702&end=39.93784,-75.1772"><img src="assets/img/crimeStep.png" class="img-rounded" title="Philly CrimeStep"></a>
-      </div>
-
+    	
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

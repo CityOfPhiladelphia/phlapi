@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PHL API: Open Data APIs from the City of Philadelphia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      .container h4 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 17.5px;
+      }
+    </style>
+    <link href="assets/css/bootswatch.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">PHL API</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="libraries.html">Libraries</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="license.html">License</a></li>
+              <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">	
+
+    	<h2>Permit Codes &amp; Descriptions</h2>
+
+    	<table class="table table-bordered table-striped">
+		<tr><th>Permit Type Code</th><th>Permit Type Name</th></tr>
+		<tr><td>ADD</td><td>Z/U-ADDITION</td></tr>
+		<tr><td>AHVAC</td><td>MEC-ALTERATION DUCT WORK/HVAC</td></tr>
+		<tr><td>ALTER</td><td>FSP-ALTERATION</td></tr>
+		<tr><td>AMEND</td><td>ADM-AMENDMENTS & REVISED PLANS</td></tr>
+		<tr><td>APPL</td><td>MEC-EQUIPMENT/APPLIANCE INSTAL</td></tr>
+		<tr><td>BACKFL</td><td>FSP-BACKFLOW</td></tr>
+		<tr><td>CO</td><td>ADM-CERTIFICATE OF OCCUPANCY</td></tr>
+		<tr><td>COMDEM</td><td>Z/U-COMPLETE DEMOLITION</td></tr>
+		<tr><td>CONR</td><td>ADM-CO NOT REQUIRED</td></tr>
+		<tr><td>DIFFU</td><td>MEC-DIFFUSER RELOCATION</td></tr>
+		<tr><td>DUPLO</td><td>ADM-REISSUE OF LAWFUL OCCUPNCY</td></tr>
+		<tr><td>ELECAN</td><td>ELE-ELECTRICAL ANNUAL MAINT</td></tr>
+		<tr><td>ELECWP</td><td>ELE-ELECTRICAL WITH PLANS</td></tr>
+		<tr><td>ENTIR</td><td>CERT - ENTIRE BUILDING</td></tr>
+		<tr><td>ENTIRE</td><td>ANC-ENTIRE STRUCTURE</td></tr>
+		<tr><td>ENTSTR</td><td>USE-USE CHANGE FOR WHOLE BLDG</td></tr>
+		<tr><td>EZELEC</td><td>ELE-EZ ELECTRICAL</td></tr>
+		<tr><td>EZPLUM</td><td>PLU-EZ PLUMBING</td></tr>
+		<tr><td>FAMDAY</td><td>USE-SINGLE FAMILY DAYCARE</td></tr>
+		<tr><td>FENCE</td><td>ZON-ERECT FENCE</td></tr>
+		<tr><td>FITOUT</td><td>ANC-FINAL TENANT FIT OUT</td></tr>
+		<tr><td>FOUND</td><td>ANC-FOUNDATION</td></tr>
+		<tr><td>FRAME</td><td>ANC-STRUCTURAL FRAMING</td></tr>
+		<tr><td>FUEL</td><td>MEC-FUEL GAS</td></tr>
+		<tr><td>FULL</td><td>DEM-COMPLETE</td></tr>
+		<tr><td>HYDR</td><td>FSP-FIRE HYDRANT</td></tr>
+		<tr><td>INTERI</td><td>DEM-INTERIOR NON-LOAD BEARING</td></tr>
+		<tr><td>KITCH1</td><td>FSP-KITCHEN HOODS (EXTINGUISH)</td></tr>
+		<tr><td>KITCHH</td><td>MEC-KITCHEN HOOD</td></tr>
+		<tr><td>LOTLIN</td><td>ZON-RELOCATION OF LOT LINES</td></tr>
+		<tr><td>MAJOR</td><td>ALT-MAJOR ALTERATION</td></tr>
+		<tr><td>MINOR</td><td>ALT-MINOR ALTERATION</td></tr>
+		<tr><td>MISC</td><td>OPS-MISCELLANEOUS</td></tr>
+		<tr><td>MOD/IN</td><td>ANC-MODULAR/INDUSTRIALIZED</td></tr>
+		<tr><td>NEWCON</td><td>Z/U-NEW CONSTRUCTION</td></tr>
+		<tr><td>NEWIN</td><td>FSP-NEW INSTALLATION</td></tr>
+		<tr><td>NEWLO</td><td>ADM-LAWFUL OCCUPANCY</td></tr>
+		<tr><td>NHVAC</td><td>MEC-NEW MECHANICAL SYSTEM</td></tr>
+		<tr><td>PARTBL</td><td>ZON-PARTIAL DEMOLITION OF BLDG</td></tr>
+		<tr><td>PARTCH</td><td>USE-USE CHANGE FOR PARTOF BLDG</td></tr>
+		<tr><td>PARTIA</td><td>DEM-ONE OR MORE BLDGS ON SITE</td></tr>
+		<tr><td>PARTIL</td><td>CERT - PARTIAL ON OWN SCHEDULE</td></tr>
+		<tr><td>PARTSI</td><td>ZON-ONE OR MORE BLDGS ON SITE</td></tr>
+		<tr><td>PLUMAN</td><td>PLU-PLUMBING ANNUAL MAINT</td></tr>
+		<tr><td>PLUMWP</td><td>PLU-PLUMBING WITH PLANS</td></tr>
+		<tr><td>PREPL</td><td>ADM-PRELIMINARY PLAN REVIEW</td></tr>
+		<tr><td>PUMP</td><td>FSP-FIRE PUMPS</td></tr>
+		<tr><td>RELOCA</td><td>FSP-RELOCATION OF HEADS</td></tr>
+		<tr><td>REMOV</td><td>FSP-REMOVAL</td></tr>
+		<tr><td>SFADD</td><td>ZON-SINGLE FAMILY ADDITION</td></tr>
+		<tr><td>SFRED</td><td>USE-REDUCTION TO SINGLE FAMILY</td></tr>
+		<tr><td>SHELL</td><td>ANC-SHELL</td></tr>
+		<tr><td>SIGNAC</td><td>Z/U/S-ACCESSORY SIGNS</td></tr>
+		<tr><td>SIGNE</td><td>Z/U-EXISTING SIGN-REFACE ACCES</td></tr>
+		<tr><td>SIGNNA</td><td>Z/U/S-NON ACCESSORY SIGNS</td></tr>
+		<tr><td>SITE</td><td>ANC-SITE WORK</td></tr>
+		<tr><td>SPEV</td><td>ADM-SPECIAL EVENT</td></tr>
+		<tr><td>STAND</td><td>FSP-STAND PIPES</td></tr>
+		<tr><td>TANK</td><td>ANC-TANK INSTALLATION (NEWCON)</td></tr>
+		<tr><td>TANKRI</td><td>DEM-REMOVE A / INSERT A TANK</td></tr>
+		<tr><td>TCO</td><td>ADM-TEMPORARY CERT OF OCCUPANC</td></tr>
+		<tr><td>TENTS</td><td>OPS-TENTS</td></tr>
+		<tr><td>WARMA</td><td>MEC-WARM AIR</td></tr>
+		</table>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
