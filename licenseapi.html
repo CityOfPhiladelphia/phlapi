@@ -189,6 +189,12 @@
           http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations?$filter=substringof('19107',zip)%20eq%20true&orderby=street_name,street_number&$format=json&$callback=cb
         </div>
 
+        <p>Get a Location by address with a JSON format. Due to how the database stores street numbers, it would be best to use <code>substringof</code>:</p>
+
+        <div class="well">
+        	http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations?$filter=substringof('1234',street_number) eq true and (street_name eq 'MARKET') and (street_suffix eq 'ST')&$format=json
+        </div>
+
         <p>Get all Licenses along with related Locations:</p>
 
         <div class="well">
@@ -216,6 +222,12 @@
 
         <div class="well">
           http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/cases?$filter=resolution%20eq%20'CLOSED'&orderby=added_datetime%20desc
+        </div>
+
+        <p>Get all Violations by Location ID:</p>
+
+        <div class="well">
+        	http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations(525027)/violationdetails
         </div>
 
         <h4 id="sampleuse">Sample API Consumption (JavaScript)</h4>
