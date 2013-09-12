@@ -5,14 +5,23 @@
     <meta charset="utf-8">
     <title>PHL API: Open Data APIs from the City of Philadelphia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="APIs and Open Data from the City of Philadelphia">
+    <meta name="author" content="Mark Headd">
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
+      }
+      .hero-unit {
+        background-image: url('assets/img/gears.gif');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 90% 10%; 
+      }
+      .hero-unit h1 {
+        padding-bottom: 13px;
       }
     </style>
     <link href="assets/css/bootswatch.css" rel="stylesheet">
@@ -60,9 +69,9 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>PHL API</h1>
-        <p>A collection of open data APIs from the City of Philadelphia. These APIs are being made available to participants in civic hackathons and many other events to provide easy access to useful civic data. Build an app or solution to make your city better! </p>
-        <p><a class="btn btn-primary btn-large" href="http://opendataphilly.org">More Open Data &raquo;</a></p>
+        <h1>GET /open/data</h1>
+        <p>A collection of open data APIs from the City of Philadelphia. These APIs are being made available to participants in civic hackathons and many other events to provide easy access to useful civic data. Build an app or solution to make your city better!</p>
+        <p><a class="btn btn-primary btn-medium" href="http://opendataphilly.org">More Open Data &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->
@@ -70,35 +79,67 @@
         <div class="span3">
           <h2>Crime Data API </h2>
           <p>Get access to the latest crime incident data, updated daily, going back to January 2006. </p>
-          <p><a class="btn" href="crimeapi.html">View more details &raquo;</a></p>
+          <p><a class="btn btn-inverse" href="crimeapi.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="crime" class="btn" href="#">Status</a></p>
         </div>
         <div class="span3">
           <h2>Geospatial APIs</h2>
           <p>Place matters! Build maps and location-based apps with this powerful collection of APIs. </p>
-          <p><a class="btn" href="geoapis.html">View more details &raquo;</a></p>
+          <p><a class="btn btn-inverse" href="geoapis.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="geo" class="btn" href="#">Status</a></p>
         </div>
         <div class="span3">
           <h2>L&I  API (Beta)</h2>
           <p>Access a rich trove of city data on permits, licenses, cases and violation details. </p>
-          <p><a class="btn" href="licenseapi.html">View more details &raquo;</a></p>
+          <p><a class="btn btn-inverse" href="licenseapi.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="li" class="btn" href="#">Status</a></p>
        </div>
         <div class="span3">
           <h2>311 API (Beta)</h2>
           <p>Access service requests submitted through the Philly311 mobile/web application. </p>
-          <p><a class="btn" href="open311.html">View more details &raquo;</a></p>
+          <p><a class="btn btn-inverse" href="open311.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="open311" class="btn" href="#">Status</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; City of Philadelphia, 2013</p>
+        <p>&copy; City of Philadelphia, 2013. [Gears image by Dima Yagnyuk, from The <a href="http://thenounproject.com/">Noun Project</a>]</p>
       </footer>
 
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+
+    var endpoints = [
+      {"name": "crime", "url": "http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents_Last30/MapServer?f=json"},
+      {"name": "geo", "url": "http://gis.phila.gov/ArcGIS/rest/services/?f=json"},
+      {"name": "li", "url": "http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/?$format=json"},
+      {"name": "open311", "url": "http://www.publicstuff.com/api/open311/discovery.json"}
+    ];
+
+    for (var i=0; i<endpoints.length; i++) {
+      checkEndpointStatus(endpoints[i].url, endpoints[i].name);
+    }
+
+    function checkEndpointStatus(url, name) {
+      $.ajax({
+          url: url,
+          async: true,
+          dataType: 'jsonp',
+          callback: false,
+          statusCode: {
+          200: function() {
+              $('#' + name).addClass('btn-success').attr('title', 'Endpoint is up and responding to requests.');
+            }
+          },
+          error: function() {
+            $('#' + name).addClass('btn-danger').attr('title', 'Endpoint appears to be down.');
+          }
+      });
+    }
+
+    </script>
 
   </body>
 </html>
