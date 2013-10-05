@@ -58,7 +58,7 @@
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="license.html">License</a></li>
               <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
-              <li><a href="hackathons/transit2013.html"><strong>Hack</strong></a></li>
+              <li><a href="https://phlapi-status.appspot.com/"><strong>API Status</strong></a></li>
             </ul>
 
           </div><!--/.nav-collapse -->
@@ -80,22 +80,22 @@
         <div class="span3">
           <h2>Crime Data API </h2>
           <p>Get access to the latest crime incident data, updated daily, going back to January 2006. </p>
-          <p><a class="btn btn-inverse" href="crimeapi.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="crime" class="btn" href="#">Status</a></p>
+          <p><a class="btn btn-inverse" href="crimeapi.html">Read the Docs &raquo;</a></p>
         </div>
         <div class="span3">
           <h2>Geospatial APIs</h2>
           <p>Place matters! Build maps and location-based apps with this powerful collection of APIs. </p>
-          <p><a class="btn btn-inverse" href="geoapis.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="geo" class="btn" href="#">Status</a></p>
+          <p><a class="btn btn-inverse" href="geoapis.html">Read the Docs &raquo;</a></p>
         </div>
         <div class="span3">
           <h2>L&I  API (Beta)</h2>
           <p>Access a rich trove of city data on permits, licenses, cases and violation details. </p>
-          <p><a class="btn btn-inverse" href="licenseapi.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="li" class="btn" href="#">Status</a></p>
+          <p><a class="btn btn-inverse" href="licenseapi.html">Read the Docs &raquo;</a></p>
        </div>
         <div class="span3">
           <h2>311 API (Beta)</h2>
           <p>Access service requests submitted through the Philly311 mobile/web application. </p>
-          <p><a class="btn btn-inverse" href="open311.html">Docs &raquo;</a>&nbsp;&nbsp;<a id="open311" class="btn" href="#">Status</a></p>
+          <p><a class="btn btn-inverse" href="open311.html">Read the Docs &raquo;</a></p>
         </div>
       </div>
 
@@ -109,37 +109,6 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-
-    <script>
-
-    var endpoints = [
-      {"name": "crime", "url": "http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/Police_Incidents_Last30/MapServer?f=json"},
-      {"name": "geo", "url": "http://gis.phila.gov/ArcGIS/rest/services/?f=json"},
-      {"name": "li", "url": "http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/?$format=json"},
-      {"name": "open311", "url": "http://www.publicstuff.com/api/open311/discovery.json"}
-    ];
-
-    for (var i=0; i<endpoints.length; i++) {
-      checkEndpointStatus(endpoints[i].url, endpoints[i].name);
-    }
-
-    function checkEndpointStatus(url, name) {
-      $.ajax({
-          url: url,
-          async: true,
-          dataType: 'jsonp',
-          statusCode: {
-          200: function() {
-              $('#' + name).addClass('btn-success').attr('title', 'Endpoint is up and responding to requests.');
-            }
-          },
-          error: function() {
-            $('#' + name).addClass('btn-danger').attr('title', 'Endpoint appears to be down.');
-          }
-      });
-    }
-
-    </script>
 
   </body>
 </html>
