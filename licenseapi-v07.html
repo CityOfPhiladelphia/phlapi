@@ -34,9 +34,6 @@
         margin-bottom: 15px;
         font-size: 17.5px;
       }
-      .shaded {
-        background-color: #D8D8D8;
-      }
     </style>
     <link href="assets/css/bootswatch.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -79,7 +76,7 @@
     </div>
 
     <div class="container-fluid">
-      <h2>Licenses & Inspections Data API </h2>
+      <h2>Licenses & Inspections Data API (Beta)</h2>
 
       <div class="row-fluid">
       <div class="span2">
@@ -87,7 +84,6 @@
           <li><a href="#endpoints">API endpoints</a></li>
           <li><a href="#locations">Locations</a></li>
           <li><a href="#permits">Permits</a></li>
-          <li><a href="#permit_contractors">Permit Contractors</a></li>
           <li><a href="#licenses">Licenses</a></li>
           <li><a href="#contractors">Licensed contractors</a></li>
           <li><a href="#cases">Cases</a></li>
@@ -97,7 +93,6 @@
           <li><a href="#buildingappeal">Building Board appeals</a></li>
           <li><a href="#hearings">Appeal hearings</a></li>
           <li><a href="#dates">Hearing dates</a></li>
-          <li><a href="#histories">Location Histories</a></li>
           <li><a href="#samplerequest">Sample data requests</a></li>
           <li><a href="#sampleuse">Sample usage</a></li>
           <li><a href="#notes">Notes</a></li>
@@ -107,29 +102,21 @@
 
         <p class="lead">Permit, license, inspection, case and violation data from the Department of Licenses & Inspections. </p>
 
-        <div class="alert alert-info">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          Documentation for the beta version of this API (v0.7) has been moved <a href="licenseapi-v07.html">here</a>. This earlier version of the API will be depricated on February 1, 2014.
-        </div>
-
-
-        <h4 id="endpoints">API Endpoints (Shaded elements are new in V 1.0)</h4>
+        <h4 id="endpoints">API Endpoints</h4>
 
         <table class="table table-bordered table-striped">
-          <tr><td>Base Service URL</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/</td></tr>
-          <tr><td>Locations</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/locations</td></tr>
-          <tr><td>Permits</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/permits</td></tr>
-          <tr class="shaded"><td>Permit Contractors</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/permitcontractors</td></tr>
-          <tr><td>Licenses</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/licenses</td></tr>
-          <tr><td>Licensed Contractors</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/licensedcontractors</td></tr>
-          <tr><td>Cases</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/cases</td></tr>
-          <tr><td>Violation Details</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/violationdetails</td></tr>
-          <tr><td>Zoning Board Appeals</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/zoningboardappeals</td></tr>
-          <tr><td>L&I Review Board Appeals</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/lireviewboardappeals</td></tr>
-          <tr><td>Building Board Appeals</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/buildingboardappeals</td></tr>
-          <tr><td>Appeal Hearings</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/appealhearings</td></tr>
-          <tr><td>Hearing Dates</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/hearingdates</td></tr>
-          <tr class="shaded"><td>Location Histories</td><td>http://services.phila.gov/PhillyApi/Data/v1.0/locationhistories</td></tr>
+          <tr><td>Base Service URL</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/</td></tr>
+          <tr><td>Locations</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations</td></tr>
+          <tr><td>Permits</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/permits</td></tr>
+          <tr><td>Licenses</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/licenses</td></tr>
+          <tr><td>Licensed Contractors</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/licensedcontractors</td></tr>
+          <tr><td>Cases</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/cases</td></tr>
+          <tr><td>Violation Details</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/violationdetails</td></tr>
+          <tr><td>Zoning Board Appeals</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/zoningboardappeals</td></tr>
+          <tr><td>L&I Review Board Appeals</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/lireviewboardappeals</td></tr>
+          <tr><td>Building Board Appeals</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/buildingboardappeals</td></tr>
+          <tr><td>Appeal Hearings</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/appealhearings</td></tr>
+          <tr><td>Hearing Dates</td><td>http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/hearingdates</td></tr>
          </table>
 
          <h4 id="locations">Locations</h4>
@@ -143,10 +130,6 @@
         <p>The Permit Code Description is more specific and describes in detail the objectives of the permitted work. For example, in the case of mechanical work a Code Description may specify the type and number of appliances to be installed (MEC-EQUIPMENT/APPLIANCE INSTAL). There is then a Description of Work for each specific permit to summarize the intent of the work. The Status and Last Modified Date indicate the current standing of the project. Contact information is provided for the primary contact and/or the contractor working on the project.</p>
         <p>View all <a href="permittypes.html">permit codes &amp; descriptions</a>.</p>
         <div id="permits_table"></div>
-
-        <h4 id="permit_contractors">Permit Contractors</h4>
-        <p>The Permit Contractors entity contains a listing of all contractors associated with a particular permit application. For example, a Major Alteration permit may have one or more contractors associated with the application.</p>
-        <div id="permit_contractors_table"></div>
 
         <h4 id="licenses">Licenses</h4>
 
@@ -192,63 +175,59 @@
          <h4 id="dates">Hearing Dates</h4>
          <div id="hearing_dates_table"></div>
 
-         <h4 id="histories">Location Histories</h4>
-          <p>The Location Histories entity describes a history of various activities at a particular address. Activities may include Zoning Board Hearing Results, Code Enforcement Violations written, Permits Issued or Licenses Issued. For example, an address may have several open permits and a recently issued Business License in its history.</p>
-         <div id="location_histories_table"></div>
-
         <h4 id="samplerequest">Sample Data Requests</h4>
 
         <p>Get all Locations for Zip Code 19107 ordered by Street Name and Street Number:</p>
 
         <div class="well">
-          http://services.phila.gov/PhillyApi/Data/v1.0/locations?$filter=substringof('19107',zip)%20eq%20true&orderby=street_name,street_number
+          http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations?$filter=substringof('19107',zip)%20eq%20true&orderby=street_name,street_number
         </div>
 
         <p>Get all Locations for Zip Code 19107 ordered by Street Name and Street Number with a JSON format response and callback:</p>
 
         <div class="well">
-          http://services.phila.gov/PhillyApi/Data/v1.0/locations?$filter=substringof('19107',zip)%20eq%20true&orderby=street_name,street_number&$format=json&$callback=cb
+          http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations?$filter=substringof('19107',zip)%20eq%20true&orderby=street_name,street_number&$format=json&$callback=cb
         </div>
 
         <p>Get a Location by address with a JSON format. Due to how the database stores street numbers, it would be best to use <code>substringof</code>:</p>
 
         <div class="well">
-        	http://services.phila.gov/PhillyApi/Data/v1.0/locations?$filter=substringof('1234',street_number) eq true and (street_name eq 'MARKET') and (street_suffix eq 'ST')&$format=json
+        	http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations?$filter=substringof('1234',street_number) eq true and (street_name eq 'MARKET') and (street_suffix eq 'ST')&$format=json
         </div>
 
         <p>Get all Licenses along with related Locations:</p>
 
         <div class="well">
-          http://services.phila.gov/PhillyApi/Data/v1.0/licenses?$expand=locations
+          http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/licenses?$expand=locations
         </div>
         <p>Get a Location for a Permit Number 49648:</p>
 
         <div class="well">
-          http://services.phila.gov/PhillyApi/Data/v1.0/permits('49648')/locations
+          http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/permits('49648')/locations
         </div>
 
         <p>Get all Zoning Board Appeals for a Location Id 525027:</p>
 
         <div class="well">
-          http://services.phila.gov/PhillyApi/Data/v1.0/locations(525027)/zoningboardappeals
+          http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations(525027)/zoningboardappeals
         </div>
 
         <p>Get all Cases with a Resolution Code "CLOSED" for a Location Id 525027:</p>
 
         <div class="well">
-          http://services.phila.gov/PhillyApi/Data/v1.0/locations(525027)/cases?$filter=resolution%20eq%20'CLOSED'
+          http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations(525027)/cases?$filter=resolution%20eq%20'CLOSED'
         </div>
 
         <p>Get all Cases with a Resolution "CLOSED" ordered by Added Datetime descending:</p>
 
         <div class="well">
-          http://services.phila.gov/PhillyApi/Data/v1.0/cases?$filter=resolution%20eq%20'CLOSED'&orderby=added_datetime%20desc
+          http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/cases?$filter=resolution%20eq%20'CLOSED'&orderby=added_datetime%20desc
         </div>
 
         <p>Get all Violations by Location ID:</p>
 
         <div class="well">
-        	http://services.phila.gov/PhillyApi/Data/v1.0/locations(525027)/violationdetails
+        	http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations(525027)/violationdetails
         </div>
 
         <h4 id="sampleuse">Sample API Consumption (JavaScript)</h4>
@@ -259,7 +238,7 @@
             var mMapReq;
               function ConsumeAPI() {
                 mMapReq = $.ajax({
-                url: "http://services.phila.gov/PhillyApi/Data/v1.0/locations(2777)?$format=json",
+                url: "http://services.phila.gov/PhillyApi/Data/v0.7/Service.svc/locations(2777)?$format=json",
                 dataType: "jsonp",
                 timeout: 20000,
                 jsonp: "$callback",
@@ -318,7 +297,6 @@
         function showInfo(data, tabletop) {
           createTable("locations_table", data, "Locations");
           createTable("permits_table", data, "Permits");
-          createTable("permit_contractors_table", data, "Permit_Contractors");
           createTable("licenses_table", data, "Licenses");
           createTable("contractors_table", data, "Licesned_Contractors");
           createTable("cases_table", data, "Cases");
@@ -328,8 +306,6 @@
           createTable("buildingappeal_table", data, "Building_Board_Appeals");
           createTable("hearing_table", data, "Building_Board_Appeals");
           createTable("hearing_dates_table", data, "Hearing_Dates");
-          createTable("location_histories_table", data, "Histories");
-          
         }
 
         function createTable(name, data, tabletype) {
