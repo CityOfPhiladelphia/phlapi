@@ -199,6 +199,55 @@
             "layer": 10,
             "description": "Philadelphia political ward boundaries",
             "metadata": ""
+        },
+        {
+            "name": "Health Centers",
+            "path": "PhilaGov/Health_Centers",
+            "layer": 0,
+            "description": "Philadelphia health centers",
+            "metadata": "http://philadelphia.maps.arcgis.com/home/item.html?id=28ef9fd21a794d16873e765300d4232e"
+        },
+        {
+            "name": "High Rise Office Buildings",
+            "path": "PhilaGov/High_Rise_Rally_Points",
+            "layer": 0,
+            "description": "High Rise Office Buildings in Center City and University that have rally points",
+            "metadata": ""
+        },
+        {
+            "name": "Evacuation Rally Points",
+            "path": "PhilaGov/High_Rise_Rally_Points",
+            "layer": 1,
+            "description": "Evacuation rally points for high rise office buildings in Center City and University City",
+            "metadata": ""
+        },
+        {
+            "name": "Keyspot Locations",
+            "path": "PhilaGov/Keyspot_Locations",
+            "layer": 0,
+            "description": "Points of all the KEYSPOT locations overseen by the Philadelphia Freedom Rings Partnership, which includes grassroots organizations, government, and universities bringing Internet access, training and technology to communities citywide.",
+            "metadata": ""
+        },
+        {
+            "name": "",
+            "path": "",
+            "layer": ,
+            "description": "",
+            "metadata": ""
+        },
+        {
+            "name": "",
+            "path": "",
+            "layer": ,
+            "description": "",
+            "metadata": ""
+        },
+        {
+            "name": "",
+            "path": "",
+            "layer": ,
+            "description": "",
+            "metadata": ""
         }
     ]
 }
