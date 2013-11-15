@@ -43,20 +43,6 @@
             "metadata": "http://www.arcgis.com/home/item.html?id=d0d970c442264a58baaaaa42b5a8f495"
         },
         {
-            "name": "Pools and Spraygrounds",
-            "path": "PhilaGov/Cooling_Centers",
-            "layer": 1,
-            "description": "Pools and Spraygrounds",
-            "metadata": "http://www.arcgis.com/home/item.html?id=9354d318457c43a8b137c47831a9ef5a"
-        },
-        {
-            "name": "Cooling Centers",
-            "path": "PhilaGov/Cooling_Centers",
-            "layer": 0,
-            "description": "Cooling centers open in the case of a heat emergency",
-            "metadata": "http://www.arcgis.com/home/item.html?id=9354d318457c43a8b137c47831a9ef5a"
-        },
-        {
             "name": "Evacuation Routes",
             "path": "PhilaGov/Evacuation_Routes",
             "layer": 2,
