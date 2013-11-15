@@ -251,6 +251,90 @@
             "layer": 10,
             "description": "Philadelphia political ward boundaries.",
             "metadata": ""
+        },
+        {
+            "name": "Prohibited Vending Streets",
+            "path": "PhilaGov/Prohibited_Vending",
+            "layer": 0,
+            "description": "Street segments where vending is prohibited within the city of Philadelphia.",
+            "metadata": ""
+        },
+        {
+            "name": "Prohibited Vending Districts",
+            "path": "PhilaGov/Prohibited_Vending",
+            "layer": 1,
+            "description": "Areas where vending & sidewalk sales are prohibited without permission from The City of Philadelphia.",
+            "metadata": ""
+        },
+        {
+            "name": "Prohibited Vending Areas",
+            "path": "PhilaGov/Prohibited_Vending",
+            "layer": 2,
+            "description": "Areas where vending & sidewalk sales are prohibited without permission from The City of Philadelphia.",
+            "metadata": ""
+        },
+        {
+            "name": "Tennis Courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 0,
+            "description": "Philadelphia tennis courts",
+            "metadata": ""
+        },
+        {
+            "name": "Street Hockey",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 1,
+            "description": "Philadelphia street hockey rinks and courts",
+            "metadata": ""
+        },
+        {
+            "name": "Handball Courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 2,
+            "description": "Philadelphia handball courts",
+            "metadata": ""
+        },
+        {
+            "name": "Basketball courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 3,
+            "description": "Philadelphia basketball courts",
+            "metadata": ""
+        },
+        {
+            "name": "Volleyball courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 4,
+            "description": "Philadelphia volleyball courts",
+            "metadata": ""
+        },
+        {
+            "name": "Older Adult Centers",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 5,
+            "description": "Philadelphia older adult centers",
+            "metadata": ""
+        },
+        {
+            "name": "Fountains",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 6,
+            "description": "Philadelphia fountains",
+            "metadata": ""
+        },
+        {
+            "name": "Athletic Fields",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 7,
+            "description": "Philadelphia athletic fields",
+            "metadata": ""
+        },
+        {
+            "name": "Athletic Tracks",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 8,
+            "description": "Philadelphia athletic tracks",
+            "metadata": ""
         }
     ]
 }
