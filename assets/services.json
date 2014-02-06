@@ -43,20 +43,6 @@
             "metadata": "http://www.arcgis.com/home/item.html?id=d0d970c442264a58baaaaa42b5a8f495"
         },
         {
-            "name": "Pools and Spraygrounds",
-            "path": "PhilaGov/Cooling_Centers",
-            "layer": 1,
-            "description": "Pools and Spraygrounds",
-            "metadata": "http://www.arcgis.com/home/item.html?id=9354d318457c43a8b137c47831a9ef5a"
-        },
-        {
-            "name": "Cooling Centers",
-            "path": "PhilaGov/Cooling_Centers",
-            "layer": 0,
-            "description": "Cooling centers open in the case of a heat emergency",
-            "metadata": "http://www.arcgis.com/home/item.html?id=9354d318457c43a8b137c47831a9ef5a"
-        },
-        {
             "name": "Evacuation Routes",
             "path": "PhilaGov/Evacuation_Routes",
             "layer": 2,
@@ -250,6 +236,90 @@
             "path": "PhilaGov/ServiceAreas",
             "layer": 10,
             "description": "Philadelphia political ward boundaries.",
+            "metadata": ""
+        },
+        {
+            "name": "Prohibited Vending Streets",
+            "path": "PhilaGov/Prohibited_Vending",
+            "layer": 0,
+            "description": "Street segments where vending is prohibited within the city of Philadelphia.",
+            "metadata": ""
+        },
+        {
+            "name": "Prohibited Vending Districts",
+            "path": "PhilaGov/Prohibited_Vending",
+            "layer": 1,
+            "description": "Areas where vending & sidewalk sales are prohibited without permission from The City of Philadelphia.",
+            "metadata": ""
+        },
+        {
+            "name": "Prohibited Vending Areas",
+            "path": "PhilaGov/Prohibited_Vending",
+            "layer": 2,
+            "description": "Areas where vending & sidewalk sales are prohibited without permission from The City of Philadelphia.",
+            "metadata": ""
+        },
+        {
+            "name": "Tennis Courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 0,
+            "description": "Philadelphia tennis courts",
+            "metadata": ""
+        },
+        {
+            "name": "Street Hockey",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 1,
+            "description": "Philadelphia street hockey rinks and courts",
+            "metadata": ""
+        },
+        {
+            "name": "Handball Courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 2,
+            "description": "Philadelphia handball courts",
+            "metadata": ""
+        },
+        {
+            "name": "Basketball courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 3,
+            "description": "Philadelphia basketball courts",
+            "metadata": ""
+        },
+        {
+            "name": "Volleyball courts",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 4,
+            "description": "Philadelphia volleyball courts",
+            "metadata": ""
+        },
+        {
+            "name": "Older Adult Centers",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 5,
+            "description": "Philadelphia older adult centers",
+            "metadata": ""
+        },
+        {
+            "name": "Fountains",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 6,
+            "description": "Philadelphia fountains",
+            "metadata": ""
+        },
+        {
+            "name": "Athletic Fields",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 7,
+            "description": "Philadelphia athletic fields",
+            "metadata": ""
+        },
+        {
+            "name": "Athletic Tracks",
+            "path": "PhilaGov/Recreation_Locations",
+            "layer": 8,
+            "description": "Philadelphia athletic tracks",
             "metadata": ""
         }
     ]
