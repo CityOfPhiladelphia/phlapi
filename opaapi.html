@@ -1,0 +1,1076 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PHL API: Open Data APIs from the City of Philadelphia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      .title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 120%;
+      }
+      .well {
+        word-wrap: break-word;
+      }
+
+    </style>
+    <link href="assets/css/bootswatch.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">PHL API</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="libraries.html">Libraries</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="license.html">License</a></li>
+              <li><a href="https://groups.google.com/forum/?fromgroups#!forum/opendataphilly">Discuss</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h2>Property Data API [beta]</h2>
+
+      <div class="row-fluid">
+      <div class="span2">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#endpoints">API endpoint</a></li>
+          <li><a href="#byaddress">Properties by Address</a></li>
+          <li><a href="#byblock">Properties by Block</a></li>
+          <li><a href="#bynearby">Nearby Properties</a></li>
+          <li><a href="#byintersection">Properties by Intersection</a></li>
+          <li><a href="#bycomparable">Properties by Comparable</a></li>
+          <li><a href="#byeqid">Properties by EqId</a></li>
+          <li><a href="#bygma">Properties by GMA</a></li>
+          <li><a href="#byaccountnum">Property by Account Number</a></li>
+          <li><a href="#bypropid">Property by Property ID</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+      <p class="lead">This API exposes data on assessed property values based on information from the Office of Property Assessment. Currently in beta, subject to change.</p>
+
+        <h4 id="endpoints" class="title">API endpoint</h4>
+          <p>The base URL for this API is <a href="http://api.phila.gov/OPA/v1.0/">http://api.phila.gov/OPA/v1.0/</a>. Response formats supported are XML (by default), JSON (when a <code>format=json</code> parameter is passed) and JSONP (when a <code>callback</code> parameter is passed). </p>
+
+        <h4 id="byaddress" class="title">Properties by Address</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/Address/4000%20Market%20Street/?Sort=full_address&skip=1&limit=2&format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "total": 2,
+    "data": {
+        "properties": [
+            {
+                "property_id": "5356004000S",
+                "account_number": "884510145",
+                "full_address": "4000S MARKET ST",
+                "unit": "",
+                "zip": "191043003",
+                "address_match": {
+                    "original": "4000 Market Street",
+                    "standardized": "4000 MARKET ST",
+                    "similarity": 100,
+                    "match_code": "",
+                    "match_type": "MA"
+                },
+                "geometry": {
+                    "x": -75.2021550326785,
+                    "y": 39.9569806226717
+                },
+                "ownership": {
+                    "owners": [
+                        "SEPTA"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "MISC.RR STA MASONRY",
+                    "land_area": 40000,
+                    "improvement_area": 40000,
+                    "improvement_description": "",
+                    "building_code": "ZG0",
+                    "eq_id": "A612PT7540",
+                    "gma": "A612",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(-39816000000-0400)/",
+                    "sales_price": 9,
+                    "sales_type": "4"
+                },
+                "valuation_history": [
+                    {
+                        "id": "4891369",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 116000,
+                        "land_taxable": 0,
+                        "land_exempt": 116000,
+                        "improvement_taxable": 0,
+                        "improvement_exempt": 0,
+                        "total_exempt": 116000,
+                        "exempt_code": "S",
+                        "exempt_date": null,
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            }
+        ]
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="byblock" class="title">Properties by Block</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/Block/102%20Gardner%20Street/?Sort=market_value&skip=10&limit=1&format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "total": 38,
+    "data": {
+        "properties": [
+            {
+                "property_id": "3610000126",
+                "account_number": "582227300",
+                "full_address": "126 GARDNER ST",
+                "unit": "",
+                "zip": "191162608",
+                "address_match": {
+                    "original": "100-198 Gardner Street",
+                    "standardized": "126 GARDNER ST",
+                    "similarity": 100,
+                    "match_code": "",
+                    "match_type": "MA"
+                },
+                "geometry": {
+                    "x": -75.0339161154302,
+                    "y": 40.1197869499359
+                },
+                "ownership": {
+                    "owners": [
+                        "BERKOVICH AARON",
+                        "GITERMAN TIKVA"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "S/D W B/G 2S MASONRY",
+                    "land_area": 3594,
+                    "improvement_area": 1732,
+                    "improvement_description": "",
+                    "building_code": "K30",
+                    "eq_id": "C621TJ5440",
+                    "gma": "C621",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(1275451200000-0400)/",
+                    "sales_price": 248000,
+                    "sales_type": "J"
+                },
+                "valuation_history": [
+                    {
+                        "id": "4773879",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 217800,
+                        "land_taxable": 86363,
+                        "land_exempt": 0,
+                        "improvement_taxable": 131437,
+                        "improvement_exempt": 0,
+                        "total_exempt": 217800,
+                        "exempt_code": "",
+                        "exempt_date": "/Date(-662670000000-0500)/",
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            }
+        ]
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="bynearby" class="title">Nearby Properties</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/Nearby/-75.1603145332422/39.9514107452357/400?limit=1&format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+            {
+    "status": "success",
+    "total": 27,
+    "data": {
+        "properties": [
+            {
+                "property_id": "5356001100",
+                "account_number": "882508200",
+                "full_address": "1100-42 MARKET ST",
+                "unit": "",
+                "zip": "191073601",
+                "address_match": {
+                    "original": null,
+                    "standardized": null,
+                    "similarity": null,
+                    "match_code": null,
+                    "match_type": null
+                },
+                "geometry": {
+                    "x": -75.1590087658401,
+                    "y": 39.9510297322627
+                },
+                "ownership": {
+                    "owners": [
+                        "TRS STEPHEN GIRARD"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "SHOP.CENT. REG'L MASONRY",
+                    "land_area": 87516,
+                    "improvement_area": 213840,
+                    "improvement_description": "",
+                    "building_code": "MB0",
+                    "eq_id": "P112CQ2040",
+                    "gma": "P112",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(-344545200000-0500)/",
+                    "sales_price": 1,
+                    "sales_type": "Z"
+                },
+                "valuation_history": [
+                    {
+                        "id": "4863712",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 51193300,
+                        "land_taxable": 17503200,
+                        "land_exempt": 0,
+                        "improvement_taxable": 33690100,
+                        "improvement_exempt": 0,
+                        "total_exempt": 51193300,
+                        "exempt_code": "",
+                        "exempt_date": "/Date(-662670000000-0500)/",
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            }
+        ]
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="byintersection" class="title">Properties by Intersection</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/Intersection/1200%20Market%20Street/12th%20Street?skip=0&limit=1&format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "total": 5,
+    "data": {
+        "properties": [
+            {
+                "property_id": "53560011130000001",
+                "account_number": "883705100",
+                "full_address": "1113 MARKET ST",
+                "unit": "0000001",
+                "zip": "19107-2901",
+                "address_match": {
+                    "original": null,
+                    "standardized": null,
+                    "similarity": null,
+                    "match_code": null,
+                    "match_type": null
+                },
+                "geometry": {
+                    "x": -75.1586767594417,
+                    "y": 39.9521564579471
+                },
+                "ownership": {
+                    "owners": [
+                        "PHILADELPHIA MARKET",
+                        "STREET"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "HOTEL 8 STY MASONRY",
+                    "land_area": 47880,
+                    "improvement_area": 223000,
+                    "improvement_description": "",
+                    "building_code": "FH0",
+                    "eq_id": "P122HH2540",
+                    "gma": "P122",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(925444800000-0400)/",
+                    "sales_price": 37605089
+                },
+                "valuation_history": [
+                    {
+                        "id": "4873471",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 35652600,
+                        "land_taxable": 9576000,
+                        "land_exempt": 0,
+                        "improvement_taxable": 26076600,
+                        "improvement_exempt": 0,
+                        "total_exempt": 35652600,
+                        "exempt_code": "",
+                        "exempt_date": "/Date(-662670000000-0500)/",
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            }
+        ]
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="bycomparable" class="title">Properties by Comparable</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/Comparable/C621TJ5440/K30?SortBy=full_address&SortOrder=desc&limit=2&format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "total": 368,
+    "data": {
+        "properties": [
+            {
+                "property_id": "6796500100",
+                "account_number": "582284100",
+                "full_address": "100 RENNARD TER",
+                "unit": "",
+                "zip": "191162606",
+                "geometry": {
+                    "x": -75.0331224009119,
+                    "y": 40.1214709703327
+                },
+                "ownership": {
+                    "owners": [
+                        "BULLARD MICHAEL A",
+                        "CHERYL"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "S/D W B/G 2S MASONRY",
+                    "land_area": 3574,
+                    "improvement_area": 1732,
+                    "improvement_description": "",
+                    "building_code": "K30",
+                    "eq_id": "C621TJ5440",
+                    "gma": "C621",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(649310400000-0400)/",
+                    "sales_price": 103000
+                },
+                "valuation_history": [
+                    {
+                        "id": "4782439",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 217800,
+                        "land_taxable": 85320,
+                        "land_exempt": 0,
+                        "improvement_taxable": 132480,
+                        "improvement_exempt": 0,
+                        "total_exempt": 217800,
+                        "exempt_code": "",
+                        "exempt_date": "/Date(-662670000000-0500)/",
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            },
+            {
+                "property_id": "6796500101",
+                "account_number": "582284800",
+                "full_address": "101 RENNARD TER",
+                "unit": "",
+                "zip": "191162605",
+                "geometry": {
+                    "x": -75.0322989803877,
+                    "y": 40.1217536181739
+                },
+                "ownership": {
+                    "owners": [
+                        "BOSCHETTI ANTHONY F",
+                        "MARIE A H/W"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "S/D W B/G 2S MASONRY",
+                    "land_area": 4019,
+                    "improvement_area": 1732,
+                    "improvement_description": "",
+                    "building_code": "K30",
+                    "eq_id": "C621TJ5440",
+                    "gma": "C621",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(533365200000-0500)/",
+                    "sales_price": 82000
+                },
+                "valuation_history": [
+                    {
+                        "id": "4782956",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 218800,
+                        "land_taxable": 90060,
+                        "land_exempt": 0,
+                        "improvement_taxable": 128740,
+                        "improvement_exempt": 0,
+                        "total_exempt": 218800,
+                        "exempt_code": "",
+                        "exempt_date": "/Date(-662670000000-0500)/",
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            }
+        ]
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="byeqid" class="title">Properties by EqId</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/EqId/C621TJ5440/K30?SortBy=sales_date&SortOrder=desc&skip=20&limit=1&format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "total": 487,
+    "data": {
+        "properties": [
+            {
+                "property_id": "6796500107",
+                "account_number": "582285100",
+                "full_address": "107 RENNARD TER",
+                "unit": "",
+                "zip": "191162605",
+                "geometry": {
+                    "x": -75.0321280344093,
+                    "y": 40.1214666985801
+                },
+                "ownership": {
+                    "owners": [
+                        "QARKAXHIA YLLKA",
+                        "QARKAXHIA YLLI"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "S/D W B/G 2S MASONRY",
+                    "land_area": 5283,
+                    "improvement_area": 1732,
+                    "improvement_description": "",
+                    "building_code": "K30",
+                    "eq_id": "C621TJ5440",
+                    "gma": "C621",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(1222747200000-0400)/",
+                    "sales_price": 258000,
+                    "sales_type": "L"
+                },
+                "valuation_history": [
+                    {
+                        "id": "4782959",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 220200,
+                        "land_taxable": 103500,
+                        "land_exempt": 0,
+                        "improvement_taxable": 116700,
+                        "improvement_exempt": 0,
+                        "total_exempt": 220200,
+                        "exempt_code": "",
+                        "exempt_date": "/Date(-662670000000-0500)/",
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            }
+        ]
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="bygma" class="title">Properties by GMA</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/GMA/C621/K30?limit=1&format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "total": 583,
+    "data": {
+        "properties": [
+            {
+                "property_id": "6796500100",
+                "account_number": "582284100",
+                "full_address": "100 RENNARD TER",
+                "unit": "",
+                "zip": "191162606",
+                "geometry": {
+                    "x": -75.0331224009119,
+                    "y": 40.1214709703327
+                },
+                "ownership": {
+                    "owners": [
+                        "BULLARD MICHAEL A",
+                        "CHERYL"
+                    ],
+                    "liaison": null
+                },
+                "characteristics": {
+                    "description": "S/D W B/G 2S MASONRY",
+                    "land_area": 3574,
+                    "improvement_area": 1732,
+                    "improvement_description": "",
+                    "building_code": "K30",
+                    "eq_id": "C621TJ5440",
+                    "gma": "C621",
+                    "homestead": null
+                },
+                "sales_information": {
+                    "sales_date": "/Date(649310400000-0400)/",
+                    "sales_price": 103000
+                },
+                "valuation_history": [
+                    {
+                        "id": "4782439",
+                        "certification_year": "2014",
+                        "assessment_date": null,
+                        "market_value_date": null,
+                        "market_value": 217800,
+                        "land_taxable": 85320,
+                        "land_exempt": 0,
+                        "improvement_taxable": 132480,
+                        "improvement_exempt": 0,
+                        "total_exempt": 217800,
+                        "exempt_code": "",
+                        "exempt_date": "/Date(-662670000000-0500)/",
+                        "exempt_description": "",
+                        "taxes": null,
+                        "certified": "Y"
+                    }
+                ],
+                "proposed_valuation": {}
+            }
+        ]
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="byaccountnum" class="title">Property by Account Number</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/Account/582231200?format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "data": {
+        "property": {
+            "property_id": "3610000105",
+            "account_number": "582231200",
+            "full_address": "105 GARDNER ST",
+            "unit": "",
+            "zip": "191162607",
+            "geometry": {
+                "x": -75.0343396724966,
+                "y": 40.1207334762557
+            },
+            "ownership": {
+                "owners": [
+                    "HUYNH NGUYET K",
+                    "TRAN AN-TED KIM"
+                ],
+                "liaison": null,
+                "mailing_address": {
+                    "street": "105 GARDNER ST",
+                    "city": "Philadelphia",
+                    "state": "PA",
+                    "zip": "191162607"
+                }
+            },
+            "characteristics": {
+                "description": "S/D W B/G 2S MASONRY",
+                "beginning_point": "90' SE RENNARD ST",
+                "land_area": 5531,
+                "improvement_area": 1732,
+                "improvement_description": "",
+                "exterior_condition": "4",
+                "zoning": "RSA2",
+                "zoning_description": "Residential/Residential Mixed-Use",
+                "building_code": "K30",
+                "eq_id": "C621TJ5440",
+                "gma": "C621",
+                "homestead": 30000
+            },
+            "sales_information": {
+                "sales_date": "/Date(1298869200000-0500)/",
+                "sales_price": 230000,
+                "sales_type": "M"
+            },
+            "valuation_history": [
+                {
+                    "id": "4776628",
+                    "certification_year": "2014",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 221700,
+                    "land_taxable": 137751,
+                    "land_exempt": 0,
+                    "improvement_taxable": 83949,
+                    "improvement_exempt": 0,
+                    "total_exempt": 221700,
+                    "exempt_code": "",
+                    "exempt_date": "/Date(-662670000000-0500)/",
+                    "exempt_description": "",
+                    "taxes": null,
+                    "certified": "Y"
+                },
+                {
+                    "id": "1910763",
+                    "certification_year": "2013",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 94500,
+                    "land_taxable": 4265,
+                    "land_exempt": 0,
+                    "improvement_taxable": 25975,
+                    "improvement_exempt": 0,
+                    "total_exempt": 30240,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 2954.75,
+                    "certified": "Y"
+                },
+                {
+                    "id": "1910764",
+                    "certification_year": "2012",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 94500,
+                    "land_taxable": 4265,
+                    "land_exempt": 0,
+                    "improvement_taxable": 25975,
+                    "improvement_exempt": 0,
+                    "total_exempt": 30240,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 2852.24,
+                    "certified": "Y"
+                },
+                {
+                    "id": "1910765",
+                    "certification_year": "2011",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 94500,
+                    "land_taxable": 4265,
+                    "land_exempt": 0,
+                    "improvement_taxable": 25975,
+                    "improvement_exempt": 0,
+                    "total_exempt": 30240,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 2746.4,
+                    "certified": "Y"
+                },
+                {
+                    "id": "1910766",
+                    "certification_year": "2010",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 94500,
+                    "land_taxable": 4265,
+                    "land_exempt": 0,
+                    "improvement_taxable": 25975,
+                    "improvement_exempt": 0,
+                    "total_exempt": 30240,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 2499.03,
+                    "certified": "Y"
+                },
+                {
+                    "id": "1910767",
+                    "certification_year": "2009",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 94500,
+                    "land_taxable": 4265,
+                    "land_exempt": 0,
+                    "improvement_taxable": 25975,
+                    "improvement_exempt": 0,
+                    "total_exempt": 30240,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 2499.03,
+                    "certified": "Y"
+                },
+                {
+                    "id": "1910768",
+                    "certification_year": "2008",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 94500,
+                    "land_taxable": 4265,
+                    "land_exempt": 0,
+                    "improvement_taxable": 25975,
+                    "improvement_exempt": 0,
+                    "total_exempt": 30240,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 2499.03,
+                    "certified": "Y"
+                }
+            ],
+            "proposed_valuation": {}
+        }
+    }
+}
+          </pre>
+        </p>
+
+        <h4 id="bypropid" class="title">Property by Property ID</h4>
+
+        <p>
+          Sample Call:
+          <div class="well">
+            http://api.phila.gov/OPA/v1.0/Property/5356004000?format=json
+          </div>
+        </p>
+
+        <p>
+          Sample Response:
+          <pre>
+{
+    "status": "success",
+    "data": {
+        "property": {
+            "property_id": "5356004000",
+            "account_number": "882930790",
+            "full_address": "4000 MARKET ST",
+            "unit": "",
+            "zip": "191043003",
+            "geometry": {
+                "x": -75.2021550326785,
+                "y": 39.9569806226717
+            },
+            "ownership": {
+                "owners": [
+                    "YI DOX SU",
+                    "JUM YE YI"
+                ],
+                "liaison": null,
+                "mailing_address": {
+                    "street": "8 S 40TH ST",
+                    "city": "PHILADELPHIA",
+                    "state": "PA",
+                    "zip": "19104-3009"
+                }
+            },
+            "characteristics": {
+                "description": "ROW W-OFF/STR 2STY MASONR",
+                "beginning_point": "SWC 40TH ST",
+                "land_area": 1080,
+                "improvement_area": 2160,
+                "improvement_description": "",
+                "exterior_condition": "4",
+                "zoning": "CMX4",
+                "zoning_description": "Commercial/Commercial Mixed-Use",
+                "building_code": "S30",
+                "eq_id": "A612CR3340",
+                "gma": "A612",
+                "homestead": null
+            },
+            "sales_information": {
+                "sales_date": "/Date(633157200000-0500)/",
+                "sales_price": 130000,
+                "sales_type": "3"
+            },
+            "valuation_history": [
+                {
+                    "id": "4871979",
+                    "certification_year": "2014",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 183600,
+                    "land_taxable": 54000,
+                    "land_exempt": 0,
+                    "improvement_taxable": 129600,
+                    "improvement_exempt": 0,
+                    "total_exempt": 183600,
+                    "exempt_code": "",
+                    "exempt_date": "/Date(-662670000000-0500)/",
+                    "exempt_description": "",
+                    "taxes": null,
+                    "certified": "Y"
+                },
+                {
+                    "id": "2682758",
+                    "certification_year": "2013",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 150000,
+                    "land_taxable": 7200,
+                    "land_exempt": 0,
+                    "improvement_taxable": 40800,
+                    "improvement_exempt": 0,
+                    "total_exempt": 48000,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 4690.08,
+                    "certified": "Y"
+                },
+                {
+                    "id": "2682759",
+                    "certification_year": "2012",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 150000,
+                    "land_taxable": 7200,
+                    "land_exempt": 0,
+                    "improvement_taxable": 40800,
+                    "improvement_exempt": 0,
+                    "total_exempt": 48000,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 4527.36,
+                    "certified": "Y"
+                },
+                {
+                    "id": "2682760",
+                    "certification_year": "2011",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 150000,
+                    "land_taxable": 7200,
+                    "land_exempt": 0,
+                    "improvement_taxable": 40800,
+                    "improvement_exempt": 0,
+                    "total_exempt": 48000,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 4359.36,
+                    "certified": "Y"
+                },
+                {
+                    "id": "2682761",
+                    "certification_year": "2010",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 150000,
+                    "land_taxable": 7200,
+                    "land_exempt": 0,
+                    "improvement_taxable": 40800,
+                    "improvement_exempt": 0,
+                    "total_exempt": 48000,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 3966.72,
+                    "certified": "Y"
+                },
+                {
+                    "id": "2682762",
+                    "certification_year": "2009",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 150000,
+                    "land_taxable": 7200,
+                    "land_exempt": 0,
+                    "improvement_taxable": 40800,
+                    "improvement_exempt": 0,
+                    "total_exempt": 48000,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 3966.72,
+                    "certified": "Y"
+                },
+                {
+                    "id": "2682763",
+                    "certification_year": "2008",
+                    "assessment_date": null,
+                    "market_value_date": null,
+                    "market_value": 150000,
+                    "land_taxable": 7200,
+                    "land_exempt": 0,
+                    "improvement_taxable": 40800,
+                    "improvement_exempt": 0,
+                    "total_exempt": 48000,
+                    "exempt_code": "",
+                    "exempt_date": null,
+                    "exempt_description": "",
+                    "taxes": 3966.72,
+                    "certified": "Y"
+                }
+            ],
+            "proposed_valuation": {}
+        }
+    }
+}
+          </pre>
+        </p>
+
+        </div>
+      </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
