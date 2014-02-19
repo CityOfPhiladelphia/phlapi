@@ -1,0 +1,1302 @@
+[
+    {
+        "title": "Stormwater Billing",
+        "description": "Online app for mapping impervious surface and stormwater bills",
+        "keyword": [
+            "Environment"
+        ],
+        "modified": "2010-02-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/143",
+        "identifier": "143",
+        "accessLevel": "public",
+        "contactPoint": "Water Department, Office of Watersheds",
+        "mbox": "PWDStormwater@phila.gov"
+    },
+    {
+        "title": "Solar Technology Projects",
+        "description": "An interactive web map providing location of and information on solar-technology projects",
+        "keyword": [
+            "Environment"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/134",
+        "identifier": "134",
+        "accessLevel": "public",
+        "contactPoint": "Mayor's Office of Sustainability",
+        "mbox": "mos@phila.gov"
+    },
+    {
+        "title": "Philadelphia Registered Historic Sites",
+        "description": "List of Philadelphia Registered Historic Sites",
+        "keyword": [
+            "Arts / Culture / History",
+            "Planning / Zoning"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/184",
+        "identifier": "184",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia City Planning Commission (PCPC)",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Public Property Listings",
+        "description": "Listing of public properties owned by the City",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia ",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/175",
+        "identifier": "175",
+        "accessLevel": "public",
+        "contactPoint": "Department of Public Property",
+        "mbox": "PublicProperty@phila.gov"
+    },
+    {
+        "title": "Topographic Contours 2ft",
+        "description": "Topographic contour lines at two foot intervals",
+        "keyword": [
+            "Environment"
+        ],
+        "modified": "2007-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/11",
+        "identifier": "11",
+        "accessLevel": "public",
+        "contactPoint": "Water Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Phila.gov Map",
+        "description": "View L&I and other City data on an interactive map",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2012-08-13",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/203",
+        "identifier": "203",
+        "accessLevel": "public",
+        "contactPoint": "Office of Innovation and Technology",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Philadelphia National Historic Sites and Landmarks",
+        "description": "Philadelphia area National Historic Sites and Landmarks",
+        "keyword": [
+            "Arts / Culture / History"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/185",
+        "identifier": "185",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia City Planning Commission (PCPC)",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Philadelphia Land Cover Raster 2008",
+        "description": "Land cover information by category",
+        "keyword": [
+            "Parks / Recreation",
+            "Planning / Zoning"
+        ],
+        "modified": "2011-10-19",
+        "publisher": "City of Philadelphia ",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/174",
+        "identifier": "174",
+        "accessLevel": "public",
+        "contactPoint": "Parks & Recreation",
+        "mbox": "joneildu@uvm.edu"
+    },
+    {
+        "title": "City Council Districts (1990)",
+        "description": "Boundaries of City Council Districts, based on 1990 census data",
+        "keyword": [
+            "Elections / Politics"
+        ],
+        "modified": "1994-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/12",
+        "identifier": "12",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "PA City of Philadelphia Accuplus Project Spring 2010",
+        "description": "Tiled orthogonal imagery of the City of Philadelphia created from nadir images",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2010-03-31",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/194",
+        "identifier": "194",
+        "accessLevel": "public",
+        "contactPoint": "GIS Services Group",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Census Blocks (2000)",
+        "description": "The basic unit of aggregation published by the US Census Bureau",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2002-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/145",
+        "identifier": "145",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Census Block Groups (2010)",
+        "description": "Subdivisions of Census Tracts from 2010 Census",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/186",
+        "identifier": "186",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Hydrology",
+        "description": "Location of city water features",
+        "keyword": [
+            "Environment"
+        ],
+        "modified": "2012-09-30",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/24",
+        "identifier": "24",
+        "accessLevel": "public",
+        "contactPoint": "Water Department",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Evacuation Routes Interactive Map",
+        "description": "An online mapping tool that identifies various evacuation routes and facilities in Philadelphia",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2010-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/132",
+        "identifier": "132",
+        "accessLevel": "public",
+        "contactPoint": "Managing Director's Office of Emergency Management",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Philadelphia Bike Racks",
+        "description": "Some available bike racks in Philadelphia",
+        "keyword": [
+            "Transportation"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/187",
+        "identifier": "187",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department ",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Property Parcels",
+        "description": "Boundaries of real estate parcels based on legal descriptions",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2012-12-25",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/28",
+        "identifier": "28",
+        "accessLevel": "public",
+        "contactPoint": "Records Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Schools",
+        "description": "Schools in Philadelphia",
+        "keyword": [
+            "Education"
+        ],
+        "modified": "2012-03-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/38",
+        "identifier": "38",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Planning Analysis Sections",
+        "description": "Boundaries of city Planning Analysis Sections",
+        "keyword": [
+            "Planning / Zoning",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2005-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/29",
+        "identifier": "29",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Philadelphia Nadir Imagery",
+        "description": "Nadir imagery of Philadelphia with optional layers",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia ",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/188",
+        "identifier": "188",
+        "accessLevel": "public",
+        "contactPoint": "GIS Services Group ",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Philadelphia Base Maps",
+        "description": "Base maps of Philadelphia",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2012-04-12",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/195",
+        "identifier": "195",
+        "accessLevel": "public",
+        "contactPoint": "GIS Services Group",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "PA City of Philadelphia Accuplus Project Spring 2012",
+        "description": "Tiled orthogonal imagery of the City of Philadelphia created from nadir images",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2012-12-11",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/246",
+        "identifier": "246",
+        "accessLevel": "public",
+        "contactPoint": "Office of Chief Data Officer",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Police Sector Boundaries",
+        "description": "Boundaries of Police Sectors",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2011-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/189",
+        "identifier": "189",
+        "accessLevel": "public",
+        "contactPoint": "Police Department",
+        "mbox": "michael.urciuoli@phila.gov"
+    },
+    {
+        "title": "City Council Districts (2000) - Active",
+        "description": "Boundaries of City Council Districts, based on 2000 census data",
+        "keyword": [
+            "Elections / Politics"
+        ],
+        "modified": "2008-04-15",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/13",
+        "identifier": "13",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "bryan.ivey@phila.gov"
+    },
+    {
+        "title": "Public Art Program Interactive Map",
+        "description": "Map of public art locations in City of Philadelphia",
+        "keyword": [
+            "Arts / Culture / History"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/153",
+        "identifier": "153",
+        "accessLevel": "public",
+        "contactPoint": "Office of Arts, Culture and the Creative Economy",
+        "mbox": "margot.berg@phila.gov"
+    },
+    {
+        "title": "Bike Network - Supporting Datasets",
+        "description": "Data to support bike network routing ",
+        "keyword": [
+            "Parks / Recreation",
+            "Transportation"
+        ],
+        "modified": "2012-04-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/197",
+        "identifier": "197",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Sanitation Districts",
+        "description": "Sanitation district boundaries",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2011-02-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/37",
+        "identifier": "37",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "City of Philadelphia FY2013 Budget Details",
+        "description": "Operating budget details for fiscal year 2013",
+        "keyword": [
+            "Budget / Finance"
+        ],
+        "modified": "2012-07-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/210",
+        "identifier": "210",
+        "accessLevel": "public",
+        "contactPoint": "Office of The Director of Finance",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Geographic Market Areas",
+        "description": "Areas within which home sales will be compared during the reassessment analysis",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2013-03-29",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/247",
+        "identifier": "247",
+        "accessLevel": "public",
+        "contactPoint": "Office of Property Assessment",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "PHA Housing Sites",
+        "description": "A searchable map of public housing sites in Philadelphia",
+        "keyword": [
+            "Health / Human Services",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/154",
+        "identifier": "154",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Housing Authority",
+        "mbox": "info@pha.phila.gov"
+    },
+    {
+        "title": "Philly Rising Boundaries",
+        "description": "Boundaries of designated Philly Rising areas",
+        "keyword": [
+            "Health / Human Services"
+        ],
+        "modified": "2012-04-24",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/198",
+        "identifier": "198",
+        "accessLevel": "public",
+        "contactPoint": "Managing Director's Office",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "City Council Districts (2016) ",
+        "description": "Boundaries of City Council Districts, based on 2010 census data",
+        "keyword": [
+            "Elections / Politics"
+        ],
+        "modified": "2012-10-11",
+        "publisher": "City Of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/209",
+        "identifier": "209",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia City Planning Commission",
+        "mbox": "dolores.harley@phila.gov"
+    },
+    {
+        "title": "City of Philadelphia FY2012 Financial Report",
+        "description": "A comprehensive report covering the previous fiscal year's budget.",
+        "keyword": [
+            "Budget / Finance"
+        ],
+        "modified": "2012-10-29",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/211",
+        "identifier": "211",
+        "accessLevel": "public",
+        "contactPoint": "Office of The Director of Finance",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Philadelphia Register of Historic Places",
+        "description": "Designations by the Philadelphia Historic Commission",
+        "keyword": [
+            "Arts / Culture / History"
+        ],
+        "modified": "2013-03-21",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/245",
+        "identifier": "245",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Historic Commission",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Real Estate Tax Look Up",
+        "description": "An online tool for accessing real estate tax information for an individual property",
+        "keyword": [
+            "Economy",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/156",
+        "identifier": "156",
+        "accessLevel": "public",
+        "contactPoint": "Revenue Department",
+        "mbox": "revenue@phila.gov"
+    },
+    {
+        "title": "LiDAR and LAS Data",
+        "description": "2008/2010 raw LiDAR data",
+        "keyword": [
+            "Environment"
+        ],
+        "modified": "2012-11-13",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/212",
+        "identifier": "212",
+        "accessLevel": "public",
+        "contactPoint": "GIS Services Group",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Aerial Photography, 2008",
+        "description": "Aerial photography of Philadelphia",
+        "keyword": [
+            "Environment",
+            "Planning / Zoning",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2008-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/60",
+        "identifier": "60",
+        "accessLevel": "public",
+        "contactPoint": "Office of Information Technology, GIS Services Group",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Street Centerlines",
+        "description": "Road centerlines",
+        "keyword": [
+            "Transportation"
+        ],
+        "modified": "2012-11-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/39",
+        "identifier": "39",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Licenses and Inspections API",
+        "description": "Permit, license, inspection, case and violation data from L&I",
+        "keyword": [
+            "Planning / Zoning"
+        ],
+        "modified": "2012-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/250",
+        "identifier": "250",
+        "accessLevel": "public",
+        "contactPoint": "Department of Licenses and Inspections",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "PhillyHistory.org",
+        "description": "Searchable collection of historical photos and maps",
+        "keyword": [
+            "Arts / Culture / History",
+            "Real Estate / Land Records",
+            "Transportation"
+        ],
+        "modified": "2004-08-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/66",
+        "identifier": "66",
+        "accessLevel": "public",
+        "contactPoint": "Department of Records",
+        "mbox": "info@phillyhistory.org"
+    },
+    {
+        "title": "Police Districts",
+        "description": "Boundaries of Police Districts",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2012-08-25",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/31",
+        "identifier": "31",
+        "accessLevel": "public",
+        "contactPoint": "Police Department",
+        "mbox": "michael.urciuoli@phila.gov"
+    },
+    {
+        "title": "Zoning Archive Online",
+        "description": "A database of scanned zoning and other license and inspections documents",
+        "keyword": [
+            "Planning / Zoning"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia ",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/140",
+        "identifier": "140",
+        "accessLevel": "public",
+        "contactPoint": "Department of Licenses and Inspections",
+        "mbox": "licertifications@phila.gov"
+    },
+    {
+        "title": "ParcelExplorer",
+        "description": "Real estate parcel map and information database and look-up tool",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2006-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/64",
+        "identifier": "64",
+        "accessLevel": "public",
+        "contactPoint": "Department of Records",
+        "mbox": "mark.dodds@phila.gov"
+    },
+    {
+        "title": "Real Estate Property Search Tool",
+        "description": "An online tool for searching, accessing, and comparing data from property value records",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/141",
+        "identifier": "141",
+        "accessLevel": "public",
+        "contactPoint": "Office of Property Assesment",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Historic Street Name Index",
+        "description": "Index of street name changes in Philadelphia",
+        "keyword": [
+            "Real Estate / Land Records",
+            "Transportation"
+        ],
+        "modified": "2007-10-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/125",
+        "identifier": "125",
+        "accessLevel": "public",
+        "contactPoint": "Department of Records",
+        "mbox": "info@phillyhistory.org"
+    },
+    {
+        "title": "Water Inlets",
+        "description": "Philadelphia Water Department water inlets",
+        "keyword": [
+            "Environment"
+        ],
+        "modified": "2013-01-25",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/43",
+        "identifier": "43",
+        "accessLevel": "public",
+        "contactPoint": "Water Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Farmers Markets Locations",
+        "description": "Provided by the Department of Public Health",
+        "keyword": [
+            "Food"
+        ],
+        "modified": "2013-01-24",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/217",
+        "identifier": "217",
+        "accessLevel": "public",
+        "contactPoint": "Department of Public Health",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "CityMaps Portal",
+        "description": "An online app that can find service areas and other relevant apps for an address",
+        "keyword": [
+            "Education",
+            "Health / Human Services",
+            "Parks / Recreation",
+            "Planning / Zoning",
+            "Public Safety",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2004-07-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/133",
+        "identifier": "133",
+        "accessLevel": "public",
+        "contactPoint": "Office of Information Technology",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "ZIP codes",
+        "description": "ZIP code boundaries",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2012-10-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/44",
+        "identifier": "44",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Police District Offices",
+        "description": "Locations of Police district offices",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2010-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/30",
+        "identifier": "30",
+        "accessLevel": "public",
+        "contactPoint": "Police Department",
+        "mbox": "michael.urciuoli@phila.gov"
+    },
+    {
+        "title": "Redevelopment Certified Areas",
+        "description": "Boundaries of blighted areas eligible for urban renewal",
+        "keyword": [
+            "Economy",
+            "Planning / Zoning",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2009-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/34",
+        "identifier": "34",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Railroads, Generalized",
+        "description": "Distribution of general railroad coverage",
+        "keyword": [
+            "Transportation"
+        ],
+        "modified": "2007-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/21",
+        "identifier": "21",
+        "accessLevel": "public",
+        "contactPoint": "Water Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Real Estate Market Areas",
+        "description": "Boundaries of areas with common internal real estate market conditions",
+        "keyword": [
+            "Economy",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2007-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/22",
+        "identifier": "22",
+        "accessLevel": "public",
+        "contactPoint": "Office of Property Assessment",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Topographic Contours 10ft",
+        "description": "Elevation at 10 foot intervals",
+        "keyword": [
+            "Environment"
+        ],
+        "modified": "2007-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/10",
+        "identifier": "10",
+        "accessLevel": "public",
+        "contactPoint": "Water Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Philadelphia Fire Department Facilities",
+        "description": "Location of fire stations",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2012-08-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/20",
+        "identifier": "20",
+        "accessLevel": "public",
+        "contactPoint": "Fire Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Philadelphia Hospitals",
+        "description": "Locations of hospitals in Philadelphia",
+        "keyword": [
+            "Health / Human Services"
+        ],
+        "modified": "2012-12-02",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/219",
+        "identifier": "219",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Police Department",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Zoning",
+        "description": "City zoning districts and classifications with annotation",
+        "keyword": [
+            "Planning / Zoning",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2013-01-25",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/45",
+        "identifier": "45",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC) ",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Historical Deed Index",
+        "description": "A navigable index of scanned historical deeds",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/81",
+        "identifier": "81",
+        "accessLevel": "public",
+        "contactPoint": "Department of Records",
+        "mbox": "philadox.support@phila.gov"
+    },
+    {
+        "title": "City Building Locations",
+        "description": "City-owned and leased property",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2013-07-11",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/252",
+        "identifier": "252",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia City Planning Commission",
+        "mbox": "mark.wheeler@phila.gov "
+    },
+    {
+        "title": "PhilaDox",
+        "description": "Online database of deeds, mortgages and other documents recorded with the City of Philadelphia",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2004-11-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/80",
+        "identifier": "80",
+        "accessLevel": "public",
+        "contactPoint": "Department of Records",
+        "mbox": "philadox.support@phila.gov"
+    },
+    {
+        "title": "Registered Community Organizations",
+        "description": "Boundaries of Planning Commission RCOs",
+        "keyword": [
+            "Planning / Zoning"
+        ],
+        "modified": "2013-01-25",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/213",
+        "identifier": "213",
+        "accessLevel": "public",
+        "contactPoint": "Planning Commission",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Census Tracts (2010)",
+        "description": "Census tracts for 2010 ",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2011-06-23",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/164",
+        "identifier": "164",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Empowerment Zones",
+        "description": "Boundaries of commercial/industrial zones with federal empowerment zone designation",
+        "keyword": [
+            "Economy",
+            "Planning / Zoning"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/16",
+        "identifier": "16",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Philadelphia Police Part One Crime Incidents",
+        "description": "Crime Data from 2006 to the present",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2012-12-12",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/215",
+        "identifier": "215",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Police Department,",
+        "mbox": "publicsafetygis@phila.gov"
+    },
+    {
+        "title": "Healthy Corner Store Locations",
+        "description": "Provided by the Department of Public Health",
+        "keyword": [
+            "Food"
+        ],
+        "modified": "2012-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/216",
+        "identifier": "216",
+        "accessLevel": "public",
+        "contactPoint": "Department of Public Health",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Green Stormwater Projects",
+        "description": "Planned and Complete Green Stormwater Infrastructure (GSI)",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2013-01-02",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/220",
+        "identifier": "220",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Water Department",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "City of Philadelphia Web Stats",
+        "description": "Website statistics for the phila.gov domain",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2014-01-31",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/259",
+        "identifier": "259",
+        "accessLevel": "public",
+        "contactPoint": "Office of Chief Data Officer",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Building Energy Benchmarking ",
+        "description": "City of Philadelphia's building energy management and in coordination with the City's benchmarking requirements ",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia ",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/258",
+        "identifier": "258",
+        "accessLevel": "public",
+        "contactPoint": "Office of Chief Data Officer",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Philadelphia Water Department Stormwater Billing Parcels",
+        "description": "Parcels used for the PWD Stormwater Billing program",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2013-04-29",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/248",
+        "identifier": "248",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Water Department",
+        "mbox": "Larry.Szarek@phila.gov"
+    },
+    {
+        "title": "Police Activity League Centers",
+        "description": "Locations of PAL Centers",
+        "keyword": [
+            "Parks / Recreation"
+        ],
+        "modified": "2012-12-02",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/221",
+        "identifier": "221",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Police Department",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Bike Network",
+        "description": "Bike lanes and bike-friendly streets.",
+        "keyword": [
+            "Parks / Recreation",
+            "Transportation"
+        ],
+        "modified": "2012-11-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/5",
+        "identifier": "5",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Evacuation Routes",
+        "description": "Evacuation routes for pedestrians and motorists",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2012-12-19",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/18",
+        "identifier": "18",
+        "accessLevel": "public",
+        "contactPoint": "Managing Director's Office of Emergency Management",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Municipal Code and City Charter",
+        "description": "Municipal Code and City Charter",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2013-10-31",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/260",
+        "identifier": "260",
+        "accessLevel": "public",
+        "contactPoint": "Office of Chief Data Officer",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "PPR Playgrounds",
+        "description": "Philadelphia Parks and Recreation System Playgrounds",
+        "keyword": [
+            "Parks / Recreation"
+        ],
+        "modified": "2012-12-02",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/222",
+        "identifier": "222",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia Parks and Recreations",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Highway Districts",
+        "description": "Boundaries of Streets Dept. highway districts",
+        "keyword": [
+            "Transportation"
+        ],
+        "modified": "2009-03-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/23",
+        "identifier": "23",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "OPA Property Assessments",
+        "description": "Property Assessments for 2013 and 2014",
+        "keyword": [
+            "Real Estate / Land Records"
+        ],
+        "modified": "2013-02-15",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/225",
+        "identifier": "225",
+        "accessLevel": "public",
+        "contactPoint": "Office of Property Assessment",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "City Limits",
+        "description": "Boundary of Philadelphia city limits",
+        "keyword": [
+            "Planning / Zoning"
+        ],
+        "modified": "2000-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/8",
+        "identifier": "8",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Recreation Activity List",
+        "description": "Searchable database of recreation centers and activities",
+        "keyword": [
+            "Parks / Recreation"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/73",
+        "identifier": "73",
+        "accessLevel": "public",
+        "contactPoint": "Parks and Recreation Department",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Buildings",
+        "description": "Outlines of buildings and related structures",
+        "keyword": [
+            "Planning / Zoning",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2007-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/6",
+        "identifier": "6",
+        "accessLevel": "public",
+        "contactPoint": "GIS Services Group",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Planning Districts",
+        "description": "Planning Districts created for Philadelphia2035",
+        "keyword": [],
+        "modified": "2013-01-15",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/169",
+        "identifier": "169",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Land Use",
+        "description": "Land use designations for land units in Philadelphia",
+        "keyword": [
+            "Planning / Zoning"
+        ],
+        "modified": "2012-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/170",
+        "identifier": "170",
+        "accessLevel": "public",
+        "contactPoint": "Philadelphia City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Sanitation Areas",
+        "description": "Sanitation area boundaries",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2011-02-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/36",
+        "identifier": "36",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Enterprise Zones",
+        "description": "Boundaries of commercial/industrial zones with federal enterprise zone status",
+        "keyword": [
+            "Economy",
+            "Planning / Zoning"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/17",
+        "identifier": "17",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Aerial Photography, 2004",
+        "description": "Aerial photography of Philadelphia",
+        "keyword": [
+            "Environment",
+            "Planning / Zoning",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2004-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/50",
+        "identifier": "50",
+        "accessLevel": "public",
+        "contactPoint": "Office of Information Technology, GIS Services Group",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Campaign Finance Records",
+        "description": "Searchable database of Philadelphia campaign finance records",
+        "keyword": [
+            "Elections / Politics"
+        ],
+        "modified": "2014-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/72",
+        "identifier": "72",
+        "accessLevel": "public",
+        "contactPoint": "Department of Records",
+        "mbox": "data@phila.gov"
+    },
+    {
+        "title": "Curb Edges",
+        "description": "Edges of drivable pavement and travelway.",
+        "keyword": [
+            "Transportation"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/15",
+        "identifier": "15",
+        "accessLevel": "public",
+        "contactPoint": "Department of Streets",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Rubbish/Recycling Collection Days",
+        "description": "Rubbish collection days and sanitation districts and areas",
+        "keyword": [
+            "Uncategorized"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/35",
+        "identifier": "35",
+        "accessLevel": "public",
+        "contactPoint": "Streets Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Political Wards",
+        "description": "Boundaries of Wards",
+        "keyword": [
+            "Elections / Politics"
+        ],
+        "modified": "2012-09-25",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/33",
+        "identifier": "33",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC)",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Impervious Surfaces",
+        "description": "Outlines of structures built or covered in inpenetrable materials.",
+        "keyword": [
+            "Environment",
+            "Real Estate / Land Records"
+        ],
+        "modified": "2004-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/25",
+        "identifier": "25",
+        "accessLevel": "public",
+        "contactPoint": "Water Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Police Divisions",
+        "description": "Boundaries of Police Divisions",
+        "keyword": [
+            "Public Safety"
+        ],
+        "modified": "2011-12-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/32",
+        "identifier": "32",
+        "accessLevel": "public",
+        "contactPoint": "Police Department",
+        "mbox": "brian.ivey@phila.gov"
+    },
+    {
+        "title": "Political Ward Divisions",
+        "description": "Boundaries of ward divisions, subunits of wards.",
+        "keyword": [
+            "Elections / Politics"
+        ],
+        "modified": "2012-09-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/42",
+        "identifier": "42",
+        "accessLevel": "public",
+        "contactPoint": "City Planning Commission (PCPC) ",
+        "mbox": "Darshna.Patel@phila.gov"
+    },
+    {
+        "title": "Transportation Parcels",
+        "description": "Transparcels based on legal descriptions",
+        "keyword": [
+            "Real Estate / Land Records",
+            "Transportation"
+        ],
+        "modified": "2012-01-01",
+        "publisher": "City of Philadelphia",
+        "accessURL": "http://www.opendataphilly.org/opendata/resource/41",
+        "identifier": "41",
+        "accessLevel": "public",
+        "contactPoint": "Department of Records",
+        "mbox": "brian.ivey@phila.gov"
+    }
+]
