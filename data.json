@@ -6,7 +6,7 @@
             "Environment"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/143",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/143",
         "identifier": "143",
         "accessLevel": "public",
         "modified": "2011-04-23",
@@ -21,7 +21,7 @@
             "Environment"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/134",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/134",
         "identifier": "134",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -37,7 +37,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/184",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/184",
         "identifier": "184",
         "accessLevel": "public",
         "modified": "2012-02-15",
@@ -52,7 +52,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia ",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/175",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/175",
         "identifier": "175",
         "accessLevel": "public",
         "modified": "2011-11-30",
@@ -67,7 +67,7 @@
             "Environment"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/11",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/11",
         "identifier": "11",
         "accessLevel": "public",
         "modified": "2011-04-25",
@@ -82,7 +82,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/203",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/203",
         "identifier": "203",
         "accessLevel": "public",
         "modified": "2013-02-26",
@@ -97,7 +97,7 @@
             "Arts / Culture / History"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/185",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/185",
         "identifier": "185",
         "accessLevel": "public",
         "modified": "2012-02-17",
@@ -113,7 +113,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia ",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/174",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/174",
         "identifier": "174",
         "accessLevel": "public",
         "modified": "2012-03-02",
@@ -128,7 +128,7 @@
             "Elections / Politics"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/12",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/12",
         "identifier": "12",
         "accessLevel": "public",
         "modified": "2011-04-23",
@@ -143,7 +143,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/194",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/194",
         "identifier": "194",
         "accessLevel": "public",
         "modified": "2012-04-19",
@@ -158,7 +158,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/145",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/145",
         "identifier": "145",
         "accessLevel": "public",
         "modified": "2012-02-17",
@@ -173,7 +173,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/186",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/186",
         "identifier": "186",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -188,7 +188,7 @@
             "Environment"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/24",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/24",
         "identifier": "24",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -203,7 +203,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/132",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/132",
         "identifier": "132",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -218,7 +218,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/187",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/187",
         "identifier": "187",
         "accessLevel": "public",
         "modified": "2012-03-02",
@@ -233,7 +233,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/28",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/28",
         "identifier": "28",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -248,7 +248,7 @@
             "Education"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/38",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/38",
         "identifier": "38",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -264,7 +264,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/29",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/29",
         "identifier": "29",
         "accessLevel": "public",
         "modified": "2011-08-12",
@@ -279,7 +279,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia ",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/188",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/188",
         "identifier": "188",
         "accessLevel": "public",
         "modified": "2012-04-19",
@@ -294,7 +294,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/195",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/195",
         "identifier": "195",
         "accessLevel": "public",
         "modified": "2012-04-19",
@@ -309,7 +309,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/246",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/246",
         "identifier": "246",
         "accessLevel": "public",
         "modified": "2013-03-29",
@@ -324,7 +324,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/189",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/189",
         "identifier": "189",
         "accessLevel": "public",
         "modified": "2012-02-24",
@@ -339,7 +339,7 @@
             "Elections / Politics"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/13",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/13",
         "identifier": "13",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -354,7 +354,7 @@
             "Arts / Culture / History"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/153",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/153",
         "identifier": "153",
         "accessLevel": "public",
         "modified": "2011-05-11",
@@ -370,7 +370,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/197",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/197",
         "identifier": "197",
         "accessLevel": "public",
         "modified": "2012-10-04",
@@ -385,7 +385,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/37",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/37",
         "identifier": "37",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -400,7 +400,7 @@
             "Budget / Finance"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/210",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/210",
         "identifier": "210",
         "accessLevel": "public",
         "modified": "2012-11-13",
@@ -415,7 +415,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/247",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/247",
         "identifier": "247",
         "accessLevel": "public",
         "modified": "2014-01-27",
@@ -431,7 +431,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/154",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/154",
         "identifier": "154",
         "accessLevel": "public",
         "modified": "2011-05-11",
@@ -446,7 +446,7 @@
             "Health / Human Services"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/198",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/198",
         "identifier": "198",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -461,7 +461,7 @@
             "Elections / Politics"
         ],
         "publisher": "City Of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/209",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/209",
         "identifier": "209",
         "accessLevel": "public",
         "modified": "2012-10-11",
@@ -476,7 +476,7 @@
             "Budget / Finance"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/211",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/211",
         "identifier": "211",
         "accessLevel": "public",
         "modified": "2012-11-13",
@@ -491,7 +491,7 @@
             "Arts / Culture / History"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/245",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/245",
         "identifier": "245",
         "accessLevel": "public",
         "modified": "2013-06-10",
@@ -507,7 +507,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/156",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/156",
         "identifier": "156",
         "accessLevel": "public",
         "modified": "2011-06-06",
@@ -522,7 +522,7 @@
             "Environment"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/212",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/212",
         "identifier": "212",
         "accessLevel": "public",
         "modified": "2012-11-13",
@@ -539,7 +539,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/60",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/60",
         "identifier": "60",
         "accessLevel": "public",
         "modified": "2011-04-25",
@@ -554,7 +554,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/39",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/39",
         "identifier": "39",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -569,7 +569,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/250",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/250",
         "identifier": "250",
         "accessLevel": "public",
         "modified": "2013-07-15",
@@ -586,7 +586,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/66",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/66",
         "identifier": "66",
         "accessLevel": "public",
         "modified": "2012-02-17",
@@ -601,7 +601,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/31",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/31",
         "identifier": "31",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -616,7 +616,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia ",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/140",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/140",
         "identifier": "140",
         "accessLevel": "public",
         "modified": "2011-04-23",
@@ -631,7 +631,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/64",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/64",
         "identifier": "64",
         "accessLevel": "public",
         "modified": "2013-10-08",
@@ -646,7 +646,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/141",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/141",
         "identifier": "141",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -662,7 +662,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/125",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/125",
         "identifier": "125",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -677,7 +677,7 @@
             "Environment"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/43",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/43",
         "identifier": "43",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -692,7 +692,7 @@
             "Food"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/217",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/217",
         "identifier": "217",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -712,7 +712,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/133",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/133",
         "identifier": "133",
         "accessLevel": "public",
         "modified": "2011-04-23",
@@ -727,7 +727,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/44",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/44",
         "identifier": "44",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -742,7 +742,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/30",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/30",
         "identifier": "30",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -759,7 +759,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/34",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/34",
         "identifier": "34",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -774,7 +774,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/21",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/21",
         "identifier": "21",
         "accessLevel": "public",
         "modified": "2011-04-30",
@@ -790,7 +790,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/22",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/22",
         "identifier": "22",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -805,7 +805,7 @@
             "Environment"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/10",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/10",
         "identifier": "10",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -820,7 +820,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/20",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/20",
         "identifier": "20",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -835,7 +835,7 @@
             "Health / Human Services"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/219",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/219",
         "identifier": "219",
         "accessLevel": "public",
         "modified": "2013-02-04",
@@ -851,7 +851,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/45",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/45",
         "identifier": "45",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -866,7 +866,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/81",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/81",
         "identifier": "81",
         "accessLevel": "public",
         "modified": "2014-02-15",
@@ -881,7 +881,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/252",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/252",
         "identifier": "252",
         "accessLevel": "public",
         "modified": "2013-11-20",
@@ -896,7 +896,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/80",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/80",
         "identifier": "80",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -911,7 +911,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/213",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/213",
         "identifier": "213",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -926,7 +926,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/164",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/164",
         "identifier": "164",
         "accessLevel": "public",
         "modified": "2011-06-23",
@@ -942,7 +942,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/16",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/16",
         "identifier": "16",
         "accessLevel": "public",
         "modified": "2012-02-21",
@@ -957,7 +957,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/215",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/215",
         "identifier": "215",
         "accessLevel": "public",
         "modified": "2014-01-27",
@@ -972,7 +972,7 @@
             "Food"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/216",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/216",
         "identifier": "216",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -987,7 +987,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/220",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/220",
         "identifier": "220",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -1002,7 +1002,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/259",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/259",
         "identifier": "259",
         "accessLevel": "public",
         "modified": "2014-02-04",
@@ -1017,7 +1017,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia ",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/258",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/258",
         "identifier": "258",
         "accessLevel": "public",
         "modified": "2014-01-23",
@@ -1032,7 +1032,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/248",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/248",
         "identifier": "248",
         "accessLevel": "public",
         "modified": "2014-01-27",
@@ -1047,7 +1047,7 @@
             "Parks / Recreation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/221",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/221",
         "identifier": "221",
         "accessLevel": "public",
         "modified": "2013-02-04",
@@ -1063,7 +1063,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/5",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/5",
         "identifier": "5",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -1078,7 +1078,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/18",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/18",
         "identifier": "18",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -1093,7 +1093,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/260",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/260",
         "identifier": "260",
         "accessLevel": "public",
         "modified": "2014-02-04",
@@ -1108,7 +1108,7 @@
             "Parks / Recreation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/222",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/222",
         "identifier": "222",
         "accessLevel": "public",
         "modified": "2013-02-26",
@@ -1123,7 +1123,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/23",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/23",
         "identifier": "23",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -1138,7 +1138,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/225",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/225",
         "identifier": "225",
         "accessLevel": "public",
         "modified": "2014-02-12",
@@ -1153,7 +1153,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/8",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/8",
         "identifier": "8",
         "accessLevel": "public",
         "modified": "2011-04-30",
@@ -1168,7 +1168,7 @@
             "Parks / Recreation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/73",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/73",
         "identifier": "73",
         "accessLevel": "public",
         "modified": "2011-04-24",
@@ -1184,7 +1184,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/6",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/6",
         "identifier": "6",
         "accessLevel": "public",
         "modified": "2012-03-02",
@@ -1199,7 +1199,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/169",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/169",
         "identifier": "169",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -1214,7 +1214,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/170",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/170",
         "identifier": "170",
         "accessLevel": "public",
         "modified": "2013-06-04",
@@ -1229,7 +1229,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/36",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/36",
         "identifier": "36",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -1245,7 +1245,7 @@
             "Planning / Zoning"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/17",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/17",
         "identifier": "17",
         "accessLevel": "public",
         "modified": "2012-02-21",
@@ -1262,7 +1262,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/50",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/50",
         "identifier": "50",
         "accessLevel": "public",
         "modified": "2011-04-23",
@@ -1277,7 +1277,7 @@
             "Elections / Politics"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/72",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/72",
         "identifier": "72",
         "accessLevel": "public",
         "modified": "2012-01-11",
@@ -1292,7 +1292,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/15",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/15",
         "identifier": "15",
         "accessLevel": "public",
         "modified": "2012-02-21",
@@ -1307,7 +1307,7 @@
             "Uncategorized"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/35",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/35",
         "identifier": "35",
         "accessLevel": "public",
         "modified": "2012-02-21",
@@ -1322,7 +1322,7 @@
             "Elections / Politics"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/33",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/33",
         "identifier": "33",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -1338,7 +1338,7 @@
             "Real Estate / Land Records"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/25",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/25",
         "identifier": "25",
         "accessLevel": "public",
         "modified": "2013-02-25",
@@ -1353,7 +1353,7 @@
             "Public Safety"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/32",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/32",
         "identifier": "32",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -1368,7 +1368,7 @@
             "Elections / Politics"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/42",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/42",
         "identifier": "42",
         "accessLevel": "public",
         "modified": "2013-10-17",
@@ -1384,7 +1384,7 @@
             "Transportation"
         ],
         "publisher": "City of Philadelphia",
-        "accessURL": "http://www.opendataphilly.org/opendata/resource/41",
+        "landingPage": "http://www.opendataphilly.org/opendata/resource/41",
         "identifier": "41",
         "accessLevel": "public",
         "modified": "2012-02-21",
