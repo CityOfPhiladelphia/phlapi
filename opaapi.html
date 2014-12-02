@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -79,9 +79,6 @@
           <li><a href="#byblock">Properties by Block</a></li>
           <li><a href="#bynearby">Nearby Properties</a></li>
           <li><a href="#byintersection">Properties by Intersection</a></li>
-          <li><a href="#bycomparable">Properties by Comparable</a></li>
-          <li><a href="#byeqid">Properties by EqId</a></li>
-          <li><a href="#bygma">Properties by GMA</a></li>
           <li><a href="#byaccountnum">Property by Account Number</a></li>
           <li><a href="#bypropid">Property by Property ID</a></li>
         </ul>
@@ -92,7 +89,7 @@
 
 <h3 id="api-endpoint">API Endpoint</h3>
 
-<p><a href="http://api.phila.gov/opa/v1.0">http://api.phila.gov/opa/v1.0</a></p>
+<p><a href="http://api.phila.gov/opa/v1.1/">http://api.phila.gov/opa/v1.1/</a></p>
 
 <h3 id="common-parameters">Common Parameters</h3>
 
@@ -145,7 +142,7 @@ Searches properties by address string and, optionally, the unit. Returns an arra
 
 <p id="market-street">1234 Market Street</p>
 
-<p><code>http://api.phila.gov/opa/v1.0/address/1234%20market%20st/?format=json</code> (Trailing slash still required even without unit)</p><div class="se-section-delimiter"></div>
+<p><code>http://api.phila.gov/opa/v1.1/address/1234%20market%20st/?format=json</code> (Trailing slash still required even without unit)</p><div class="se-section-delimiter"></div>
 
 <pre class="prettyprint prettyprinted" style=""><code><span class="pun">{</span><span class="pln">
     status</span><span class="pun">:</span><span class="pln"> </span><span class="str">"success"</span><span class="pun">,</span><span class="pln">
@@ -181,8 +178,6 @@ Searches properties by address string and, optionally, the unit. Returns an arra
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">693060</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DE0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OA6040"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -192,10 +187,7 @@ Searches properties by address string and, optionally, the unit. Returns an arra
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4874036"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">87813900</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">393277</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9638723</span><span class="pun">,</span><span class="pln">
@@ -219,7 +211,7 @@ Searches properties by address string and, optionally, the unit. Returns an arra
 
 <p id="south-broad-street-unit">123 South Broad Street, Unit 1</p>
 
-<p><code>http://api.phila.gov/opa/v1.0/address/123%S%20broad/1?format=json</code></p><div class="se-section-delimiter"></div>
+<p><code>http://api.phila.gov/opa/v1.1/address/123%S%20broad/1?format=json</code></p><div class="se-section-delimiter"></div>
 
 <pre class="prettyprint prettyprinted" style=""><code><span class="pun">{</span><span class="pln">
     status</span><span class="pun">:</span><span class="pln"> </span><span class="str">"success"</span><span class="pun">,</span><span class="pln">
@@ -255,8 +247,6 @@ Searches properties by address string and, optionally, the unit. Returns an arra
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">310659</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OB3540"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -266,10 +256,7 @@ Searches properties by address string and, optionally, the unit. Returns an arra
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4877517"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30418800</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2085100</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -300,7 +287,7 @@ Search properties by the city block of an address string. Returns an array of pr
 
 <p id="block-of-market-street">1200 Block of Market Street</p>
 
-<p><code>http://api.phila.gov/opa/v1.0/block/1200%20market%20st/?format=json</code></p>
+<p><code>http://api.phila.gov/opa/v1.1/block/1200%20market%20st/?format=json</code></p>
 
 <pre class="prettyprint prettyprinted" style=""><code><span class="pun">{</span><span class="pln">
     status</span><span class="pun">:</span><span class="pln"> </span><span class="str">"success"</span><span class="pun">,</span><span class="pln">
@@ -337,8 +324,6 @@ Search properties by the city block of an address string. Returns an array of pr
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">631006</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FM0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112HH4030"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -348,10 +333,7 @@ Search properties by the city block of an address string. Returns an array of pr
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873476"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74927200</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8104800</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -399,8 +381,6 @@ Search properties by the city block of an address string. Returns an array of pr
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1063580</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FM0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122HH6020"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -410,10 +390,7 @@ Search properties by the city block of an address string. Returns an array of pr
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4872053"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">203729200</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">23049600</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -460,8 +437,6 @@ Search properties by the city block of an address string. Returns an array of pr
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">693060</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DE0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OA6040"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -471,10 +446,7 @@ Search properties by the city block of an address string. Returns an array of pr
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4874036"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">87813900</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">393277</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9638723</span><span class="pun">,</span><span class="pln">
@@ -505,7 +477,7 @@ Searches properties near an intersection of two streets. Returns an array of pro
 
 <p id="intersection-of-th-market-streets">Intersection of 12th &amp; Market Streets</p>
 
-<p><code>http://api.phila.gov/opa/v1.0/intersection/12th/market?format=json</code></p><div class="se-section-delimiter"></div>
+<p><code>http://api.phila.gov/opa/v1.1/intersection/12th/market?format=json</code></p><div class="se-section-delimiter"></div>
 
 <pre class="prettyprint prettyprinted" style=""><code><span class="pun">{</span><span class="pln">
     status</span><span class="pun">:</span><span class="pln"> </span><span class="str">"success"</span><span class="pun">,</span><span class="pln">
@@ -542,8 +514,6 @@ Searches properties near an intersection of two streets. Returns an array of pro
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">223000</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FH0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122HH2540"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -552,10 +522,7 @@ Searches properties near an intersection of two streets. Returns an array of pro
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873471"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35652600</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9576000</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -602,8 +569,6 @@ Searches properties near an intersection of two streets. Returns an array of pro
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">48000</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"6A0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122232040"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -613,10 +578,7 @@ Searches properties near an intersection of two streets. Returns an array of pro
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873472"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13772700</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4800000</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -663,8 +625,6 @@ Searches properties near an intersection of two streets. Returns an array of pro
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">39000</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"6B0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122202000"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -674,10 +634,7 @@ Searches properties near an intersection of two streets. Returns an array of pro
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873473"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1000000</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1000000</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -724,8 +681,6 @@ Searches properties near an intersection of two streets. Returns an array of pro
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">191520</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4D0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122110040"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -735,10 +690,7 @@ Searches properties near an intersection of two streets. Returns an array of pro
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4877130"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2545000</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2545000</span><span class="pun">,</span><span class="pln">
@@ -786,8 +738,6 @@ Searches properties near an intersection of two streets. Returns an array of pro
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">631006</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FM0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112HH4030"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -797,10 +747,7 @@ Searches properties near an intersection of two streets. Returns an array of pro
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873476"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74927200</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8104800</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -829,7 +776,7 @@ View an individual property by its OPA Account Number. Returns a property object
 
 <h2 id="examples-3">Examples</h2>
 
-<p><code>http://api.phila.gov/opa/v1.0/account/883309000?format=json</code></p>
+<p><code>http://api.phila.gov/opa/v1.1/account/883309000?format=json</code></p>
 
 <pre class="prettyprint prettyprinted" style=""><code><span class="pun">{</span><span class="pln">
     status</span><span class="pun">:</span><span class="pln"> </span><span class="str">"success"</span><span class="pun">,</span><span class="pln">
@@ -866,8 +813,6 @@ View an individual property by its OPA Account Number. Returns a property object
                 zoning</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CMX5"</span><span class="pun">,</span><span class="pln">
                 zoning_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Commercial/Commercial Mixed-Use"</span><span class="pun">,</span><span class="pln">
                 building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DE0"</span><span class="pun">,</span><span class="pln">
-                eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OA6040"</span><span class="pun">,</span><span class="pln">
-                gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                 homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
             </span><span class="pun">},</span><span class="pln">
             sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -877,10 +822,7 @@ View an individual property by its OPA Account Number. Returns a property object
             </span><span class="pun">},</span><span class="pln">
             valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4874036"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">87813900</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">393277</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9638723</span><span class="pun">,</span><span class="pln">
@@ -894,10 +836,7 @@ View an individual property by its OPA Account Number. Returns a property object
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679027"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2013"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -911,10 +850,7 @@ View an individual property by its OPA Account Number. Returns a property object
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679028"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2012"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -928,10 +864,7 @@ View an individual property by its OPA Account Number. Returns a property object
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679029"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2011"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -945,10 +878,7 @@ View an individual property by its OPA Account Number. Returns a property object
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679030"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2010"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -962,10 +892,7 @@ View an individual property by its OPA Account Number. Returns a property object
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679031"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2009"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -979,10 +906,7 @@ View an individual property by its OPA Account Number. Returns a property object
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679032"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2008"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -1010,7 +934,7 @@ View an individual property by its Property ID, an alternative primary key that 
 
 <h2 id="examples-4">Examples</h2>
 
-<p><code>http:/api.phila.gov/opa/v1.0/property/5356001234?format=json</code></p><div class="se-section-delimiter"></div>
+<p><code>http:/api.phila.gov/opa/v1.1/property/5356001234?format=json</code></p><div class="se-section-delimiter"></div>
 
 <pre class="prettyprint prettyprinted" style=""><code><span class="pun">{</span><span class="pln">
     status</span><span class="pun">:</span><span class="pln"> </span><span class="str">"success"</span><span class="pun">,</span><span class="pln">
@@ -1047,8 +971,6 @@ View an individual property by its Property ID, an alternative primary key that 
                 zoning</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CMX5"</span><span class="pun">,</span><span class="pln">
                 zoning_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Commercial/Commercial Mixed-Use"</span><span class="pun">,</span><span class="pln">
                 building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DE0"</span><span class="pun">,</span><span class="pln">
-                eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OA6040"</span><span class="pun">,</span><span class="pln">
-                gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                 homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
             </span><span class="pun">},</span><span class="pln">
             sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1058,10 +980,7 @@ View an individual property by its Property ID, an alternative primary key that 
             </span><span class="pun">},</span><span class="pln">
             valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4874036"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">87813900</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">393277</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9638723</span><span class="pun">,</span><span class="pln">
@@ -1075,10 +994,7 @@ View an individual property by its Property ID, an alternative primary key that 
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679027"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2013"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -1092,10 +1008,7 @@ View an individual property by its Property ID, an alternative primary key that 
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679028"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2012"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -1109,10 +1022,7 @@ View an individual property by its Property ID, an alternative primary key that 
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679029"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2011"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -1126,10 +1036,7 @@ View an individual property by its Property ID, an alternative primary key that 
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679030"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2010"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -1143,10 +1050,7 @@ View an individual property by its Property ID, an alternative primary key that 
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679031"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2009"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -1160,10 +1064,7 @@ View an individual property by its Property ID, an alternative primary key that 
                     certified</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Y"</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 </span><span class="pun">{</span><span class="pln">
-                    id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2679032"</span><span class="pun">,</span><span class="pln">
                     certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2008"</span><span class="pun">,</span><span class="pln">
-                    assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                    market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36250000</span><span class="pun">,</span><span class="pln">
                     land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">125985</span><span class="pun">,</span><span class="pln">
                     land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3087731</span><span class="pun">,</span><span class="pln">
@@ -1193,7 +1094,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
 
 <p id="search-within-feet-of-market-street">Search within 400 feet of 1234 Market Street</p>
 
-<p><code>http://api.phila.gov/opa/v1.0/nearby/-75.1609758181729/39.9516618543639/400?format=json</code></p>
+<p><code>http://api.phila.gov/opa/v1.1/nearby/-75.1609758181729/39.9516618543639/400?format=json</code></p>
 
 <pre class="prettyprint prettyprinted" style=""><code><span class="pun">{</span><span class="pln">
     status</span><span class="pun">:</span><span class="pln"> </span><span class="str">"success"</span><span class="pun">,</span><span class="pln">
@@ -1230,8 +1131,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">631006</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FM0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112HH4030"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1241,10 +1140,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873476"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74927200</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">8104800</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1292,8 +1188,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1063580</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FM0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122HH6020"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1303,10 +1197,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4872053"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">203729200</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">23049600</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1354,8 +1245,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">110250</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CC0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1365,10 +1254,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4861452"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">17240000</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">447097</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1415,8 +1301,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">52486</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OA3440"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1426,10 +1310,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4874038"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3411500</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">981600</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1476,8 +1357,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">121644</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112O03440"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1487,10 +1366,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4874039"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7921600</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1196300</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1538,8 +1414,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">64770</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1549,10 +1423,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4889410"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1845000</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">42438</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1600,8 +1471,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">12824</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AC0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112CR2540"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1611,10 +1480,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4870608"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2192900</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1140600</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1662,8 +1528,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">17726</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AC0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112CQ2540"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1673,10 +1537,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4870609"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3000800</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1181800</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1723,8 +1584,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">11890</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112CR2440"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1733,10 +1592,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4870610"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2278100</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1216000</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1783,8 +1639,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">267023</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CC0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112AH2530"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1794,10 +1648,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4861456"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">44750000</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">760064</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1844,8 +1695,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">693060</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DE0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OA6040"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1855,10 +1704,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4874036"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">87813900</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">393277</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9638723</span><span class="pun">,</span><span class="pln">
@@ -1906,8 +1752,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1128060</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DC0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112OA2040"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -1917,10 +1761,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4871182"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">106107200</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15232200</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -1967,9 +1808,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">108000</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112O02440"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
-                    homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
+		    homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
                     sales_date</span><span class="pun">:</span><span class="pln"> </span><span class="str">"/Date(811396800000-0400)/"</span><span class="pun">,</span><span class="pln">
@@ -1978,10 +1817,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4871183"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13211600</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1460900</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2028,8 +1864,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">108000</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112O02440"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2039,10 +1873,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4871184"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">12110600</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1460900</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2089,8 +1920,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZG0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122PT7540"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2100,10 +1929,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4891365"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400000</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400000</span><span class="pun">,</span><span class="pln">
@@ -2150,8 +1976,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RB"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122LP0000"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2161,10 +1985,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4863713"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3037500</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3037500</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2211,8 +2032,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">359250</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"AK1"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112CR6040"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2221,10 +2040,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4870616"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">122863500</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35925000</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2271,8 +2087,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RB"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122LP0000"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2281,10 +2095,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4863714"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3037500</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3037500</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2331,8 +2142,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RB"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122LP0000"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2341,10 +2150,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4863715"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1012500</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1012500</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2391,8 +2197,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RB"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122L00000"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2401,10 +2205,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4863716"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">598500</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">598500</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2451,8 +2252,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">228225</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FM0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122HH4540"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2462,10 +2261,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873466"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">32052600</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2132000</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2512,8 +2308,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ZG0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P211PT7540"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P211"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2523,10 +2317,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4890084"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400000</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">400000</span><span class="pun">,</span><span class="pln">
@@ -2574,8 +2365,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22144</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"WB0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2585,10 +2374,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4856873"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4990700</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22963</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1868537</span><span class="pun">,</span><span class="pln">
@@ -2636,8 +2422,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">424992</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FL0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122HH3530"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P122"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2646,10 +2430,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4873467"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">61847500</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5300000</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
@@ -2696,8 +2477,6 @@ Searches for properties within a specified rectangular radius of a latitude/long
                     improvement_area</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6120</span><span class="pun">,</span><span class="pln">
                     improvement_description</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
                     building_code</span><span class="pun">:</span><span class="pln"> </span><span class="str">"CA0"</span><span class="pun">,</span><span class="pln">
-                    eq_id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112AM2240"</span><span class="pun">,</span><span class="pln">
-                    gma</span><span class="pun">:</span><span class="pln"> </span><span class="str">"P112"</span><span class="pun">,</span><span class="pln">
                     homestead</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
                 </span><span class="pun">},</span><span class="pln">
                 sales_information</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -2707,10 +2486,7 @@ Searches for properties within a specified rectangular radius of a latitude/long
                 </span><span class="pun">},</span><span class="pln">
                 valuation_history</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
                     </span><span class="pun">{</span><span class="pln">
-                        id</span><span class="pun">:</span><span class="pln"> </span><span class="str">"4869644"</span><span class="pun">,</span><span class="pln">
                         certification_year</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014"</span><span class="pun">,</span><span class="pln">
-                        assessment_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
-                        market_value_date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln">
                         market_value</span><span class="pun">:</span><span class="pln"> </span><span class="lit">829300</span><span class="pun">,</span><span class="pln">
                         land_taxable</span><span class="pun">:</span><span class="pln"> </span><span class="lit">76839</span><span class="pun">,</span><span class="pln">
                         land_exempt</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
