@@ -1,31 +1,20 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "\nThis data set contains the list of polling places. It can be organized by ward/division, accessibility rating, or type of building.\n\nThis list is used to assign poll workers, send the machines and necessary accessibility materials, etc.\n\n**Polling Places API** \n\nBuilding Code Look Up Type\n--------------------------\n\n|Building Code|Description|\n|:------------|:----------|\n|F|Building Fully Accessible|\n|B|Building Substantially Accessible|\n|M|Building Accessibilty Modified|\n|A|Alternate Entrance|\n|R|Building Accessible With Ramp|\n|N|Building Not Accessible|\n\nParking Code Look Up Type\n--------------------------\n\n|Parking Code|Description|\n|:-----------|:----------|\n|N|No Parking|\n|G|General Parking|\n|L|Loading Zone|\n|H|Handicap Parking|\n",
-        "version": "1.0.0",
+        "description": "\nThis data set contains the list of polling places. It can be organized by ward/division, accessibility rating, or type of building.\n\nThis list is used to assign poll workers, send the machines and necessary accessibility materials, etc.\n",
+        "version": "1.0",
         "title": "Polling Places API"
     },
-    "host": "www.philadelphiavotes.com",
+    "host": "api.phila.gov",
+    "basePath": "/polling-places/v1",
     "schemes": [
         "http"
     ],
     "paths": {
-        "/index.php": {
+        "/": {
             "get": {
                 "summary": "Get Polling Places Data",
                 "parameters": [
-                    {
-                        "in": "query",
-                        "name": "option",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "in": "query",
-                        "name": "view",
-                        "required": true,
-                        "type": "string"
-                    },
                     {
                         "in": "query",
                         "name": "ward",
@@ -55,18 +44,9 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "An array of polling places",
+                        "description": "An array containing the polling place",
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/features"
-                            }
-                        }
-                    },
-                    "default": {
-                        "description": "unexpected error",
-                        "schema": {
-                            "$ref": "#/definitions/errorModel"
+                            "$ref": "#/definitions/features"
                         }
                     }
                 }
@@ -75,7 +55,7 @@
     },
     "definitions": {
         "features": {
-            "attributes": {
+            "properties": {
                 "ward": {
                     "type": "string",
                     "description": "The number of the electoral subdivision that houses the polling place."
@@ -103,11 +83,11 @@
                 },
                 "building": {
                     "type": "string",
-                    "description": "Assigned code to denote the accessibility of the polling place. See above for details of the codes."
+                    "description": "Assigned code to denote the accessibility of the polling place. See above for details of the codes.\nF = Building Fully Accessible;\nB = Building Substantially Accessible;\nM = Building Accessibilty Modified;\nA = Alternate Entrance;\nR = Building Accessible With Ramp;\nN = Building Not Accessible;\n"
                 },
                 "parking": {
                     "type": "string",
-                    "description": "Assigned code to denote the availability of parking. See above for details of the codes."
+                    "description": "Assigned code to denote the availability of parking. See above for details of the codes.\nN = No Parking;\nG = General Parking;\nL = Loading Zone;\nH = Handicap Parking\n"
                 },
                 "lat": {
                     "type": "number",
@@ -118,21 +98,6 @@
                     "type": "number",
                     "format": "float",
                     "description": "Longitudinal coordinates of the polling place."
-                }
-            }
-        },
-        "errorModel": {
-            "required": [
-                "code",
-                "message"
-            ],
-            "properties": {
-                "code": {
-                    "type": "integer",
-                    "format": "int32"
-                },
-                "message": {
-                    "type": "string"
                 }
             }
         }
