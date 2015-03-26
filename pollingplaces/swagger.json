@@ -83,7 +83,7 @@
                 },
                 "building": {
                     "type": "string",
-                    "description": "Assigned code to denote the accessibility of the polling place. See above for details of the codes.\nF = Building Fully Accessible;\nB = Building Substantially Accessible;\nM = Building Accessibilty Modified;\nA = Alternate Entrance;\nR = Building Accessible With Ramp;\nN = Building Not Accessible;\n"
+                    "description": "Assigned code to denote the accessibility of the polling place. See above for details of the codes.\nF = Building Fully Accessible;\nB = Building Substantially Accessible;\nM = Building Accessibilty Modified;\nA = Alternate Entrance;\nR = Building Accessible With Ramp;\nN = Building Not Accessible\n"
                 },
                 "parking": {
                     "type": "string",
