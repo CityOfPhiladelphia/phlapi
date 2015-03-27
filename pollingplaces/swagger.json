@@ -1,0 +1,105 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "\nThis data set contains the list of polling places. It can be organized by ward/division, accessibility rating, or type of building.\n\nThis list is used to assign poll workers, send the machines and necessary accessibility materials, etc.\n\n**Endpoint:** http://api.phila.gov/polling-places/v1\n",
+        "version": "1.0",
+        "title": "Polling Places API"
+    },
+    "host": "api.phila.gov",
+    "basePath": "/polling-places/v1",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/": {
+            "get": {
+                "summary": "Get Polling Places Data",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "ward",
+                        "description": "Ward Number",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "in": "query",
+                        "name": "division",
+                        "description": "Division Number",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "in": "query",
+                        "name": "callback",
+                        "description": "Optional parameter for jsonp support.",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array containing the polling place",
+                        "schema": {
+                            "$ref": "#/definitions/features"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "features": {
+            "properties": {
+                "ward": {
+                    "type": "string",
+                    "description": "The number of the electoral subdivision that houses the polling place."
+                },
+                "division": {
+                    "type": "string",
+                    "description": "The number of the electoral section that houses the polling place."
+                },
+                "pin_address": {
+                    "type": "string",
+                    "description": "Mailing address of the polling place."
+                },
+                "display_address": {
+                    "type": "string",
+                    "description": "Mailing address of the polling place (formatted for display purposes)."
+                },
+                "zip_code": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "Zipcode of the polling place."
+                },
+                "location": {
+                    "type": "string",
+                    "description": "The name of the polling place."
+                },
+                "building": {
+                    "type": "string",
+                    "description": "Assigned code to denote the accessibility of the polling place. See above for details of the codes.\nF = Building Fully Accessible;\nB = Building Substantially Accessible;\nM = Building Accessibilty Modified;\nA = Alternate Entrance;\nR = Building Accessible With Ramp;\nN = Building Not Accessible\n"
+                },
+                "parking": {
+                    "type": "string",
+                    "description": "Assigned code to denote the availability of parking. See above for details of the codes.\nN = No Parking;\nG = General Parking;\nL = Loading Zone;\nH = Handicap Parking\n"
+                },
+                "lat": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "Latitudinal coordinates of the polling place."
+                },
+                "lng": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "Longitudinal coordinates of the polling place."
+                }
+            }
+        }
+    }
+}
