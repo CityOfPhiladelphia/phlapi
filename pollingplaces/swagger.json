@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "\nThis data set contains the list of polling places. It can be organized by ward/division, accessibility rating, or type of building.\n\nThis list is used to assign poll workers, send the machines and necessary accessibility materials, etc.\n",
+        "description": "\nThis data set contains the list of polling places. It can be organized by ward/division, accessibility rating, or type of building.\n\nThis list is used to assign poll workers, send the machines and necessary accessibility materials, etc.\n\n**Endpoint:** http://api.phila.gov/polling-places/v1\n",
         "version": "1.0",
         "title": "Polling Places API"
     },
