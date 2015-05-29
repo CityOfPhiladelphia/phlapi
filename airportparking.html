@@ -79,21 +79,23 @@
       </div>
       <div class="span9">
 
-<p class="lead">This simple read-only API exposes parking garage availability data (updated every few minutes) for the Philadelphia International Airport.
-<br/>
-<br/>
-<span style="font-size:12px;">Data returned for each garage includes:</span>
-<ul><li>Lat/Long coordinates of the garage</li>
-<li>Total number of parking spaces</li>
-<li>Total number of ADA (handicapped) spaces</li>
-<li>Current number of available spaces</li><ul></p>
+        <p class="lead">This simple read-only API exposes parking garage availability data (updated every few minutes) for the Philadelphia International Airport.</p>
+        <p>Data returned for each garage includes:
+        <ul><li>Lat/Long coordinates of the garage</li>
+        <li>Total number of parking spaces</li>
+        <li>Total number of ADA (handicapped) spaces</li>
+        <li>Current number of available spaces</li><ul></p></p>
+        <h4 id="endpoints">API Endpoint</h4>
 
-<h3 id="api-endpoint">API Endpoint</h3>
+         <table class="table table-bordered">
+          <tr><td><a href="https://api.phila.gov/airport-parking/v1/">https://api.phila.gov/airport-parking/v1/</a></td></tr>
+         </table>
 
-<p><a href="https://api.phila.gov/airport-parking/v1/">https://api.phila.gov/airport-parking/v1/</a></p>
+        <h4 id="services">Get Services List</h4>
 
-<table class="table table-bordered">
+        <p>Get a list of 311 service request types and their associated service codes.</p>
 
+         <table class="table table-bordered">
           <tr><td>Sample Response:</td><td> <pre>
           {  
            "garages":[  
@@ -146,8 +148,6 @@
           }
          </pre></td></tr>
          </table>
-
-
         </div>
       </div> <!-- /container -->
 
