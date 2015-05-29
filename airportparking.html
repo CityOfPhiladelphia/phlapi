@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -78,21 +77,78 @@
           <li><a href="#endpoints">API endpoint</a></li>
         </ul>
       </div>
-        <div class="span9">
-          <p class="lead">This simple read-only API exposes parking garage availability data (updated every few minutes) for the Philadelphia International Airport.
-          
-          Data returned for each garage includes:
-          * Lat/Long coordinates of the garage
-          * Total number of parking spaces
-          * Total number of ADA (handicapped) spaces
-          * Current number of available spaces
-          
-          Data is returned in JSON format.</p>
-          <div class="se-section-delimiter"></div>
-          
-          <h3 id="api-endpoint">API Endpoint</h3>
-          
-          <p><a href="https://api.phila.gov/airport-parking/v1/">https://api.phila.gov/airport-parking/v1/</a></p>
+      <div class="span9">
+
+<p class="lead">This simple read-only API exposes parking garage availability data (updated every few minutes) for the Philadelphia International Airport.
+<br/>
+<br/>
+Data returned for each garage includes:
+<ul><li>Lat/Long coordinates of the garage</li>
+<li>Total number of parking spaces</li>
+<li>Total number of ADA (handicapped) spaces</li>
+<li>Current number of available spaces</li><ul></p>
+<div class="se-section-delimiter"></div>
+
+<h3 id="api-endpoint">API Endpoint</h3>
+
+<p><a href="https://api.phila.gov/airport-parking/v1/">https://api.phila.gov/airport-parking/v1/</a></p>
+
+<table class="table table-bordered">
+
+          <tr><td>Sample Response:</td><td> <pre>
+          {  
+           "garages":[  
+              {  
+                 "lat":"39.8775100347",
+                 "lng":"-75.2472191649",
+                 "total_spaces":"3489",
+                 "type":"garage",
+                 "display_name":"A",
+                 "ada_spaces":"35",
+                 "spaces_available":"1370.000000"
+              },
+              {  
+                 "lat":"39.877964439",
+                 "lng":"-75.2456045136",
+                 "type":"garage",
+                 "display_name":"B",
+                 "total_spaces":"870",
+                 "ada_spaces":"20",
+                 "spaces_available":"188.000000"
+              },
+              {  
+                 "lat":"39.878479289",
+                 "lng":"-75.2437663668",
+                 "type":"garage",
+                 "display_name":"C",
+                 "total_spaces":"1771",
+                 "ada_spaces":"26",
+                 "spaces_available":"217.000000"
+              },
+              {  
+                 "lat":"39.8788499486",
+                 "lng":"-75.243037793",
+                 "type":"garage",
+                 "total_spaces":"1523",
+                 "display_name":"D",
+                 "ada_spaces":"32",
+                 "spaces_available":"692.000000"
+              },
+              {  
+                 "lat":"39.8792214437",
+                 "lng":"-75.2426930308",
+                 "type":"garage",
+                 "total_spaces":"3331",
+                 "display_name":"EF",
+                 "ada_spaces":"47",
+                 "spaces_available":"1916.000000"
+              }
+            ]
+          }
+         </pre></td></tr>
+         </table>
+
+
         </div>
       </div> <!-- /container -->
 
